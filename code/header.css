@@ -1,0 +1,87 @@
+/*/////////////////////////////////Body//////////////////////////////////////////////////*/
+#bodyaccueil{
+	background-image: url(../Images/fonds.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////Logo//////////////////////////////////////////////////*/
+h1{
+	text-align: center;
+}
+
+.logo{
+	width:500px;
+	height:100px;
+	border-radius:30px;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////SearchBar//////////////////////////////////////////////////*/
+#searchbar{
+	margin-left: 120px;
+}
+
+.bouton{
+	border-radius:5em;
+	background-color:black;
+	color:white;
+}
+
+.champ {
+    width: 60%;
+    border-radius: 3em;
+    margin-left: 15%;
+    background-color:black;
+    opacity:0.8;
+    color:white
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////Nav//////////////////////////////////////////////////*/
+.cadre {
+    color: white;
+    padding-top: 1%;
+    background-color: rgba(0,0,0,0.5);
+    height: 2em;
+    margin-top: 1%;
+    border-radius: 1;
+}
+
+li {
+	width: 5%;
+	margin-left: 3%;
+	margin-right: 1%;
+	display: inline;
+	border: rgb(28, 58, 72) solid 0.9em;
+	background:rgb(28,58,72);
+	opacity: 0.9;
+	transition: border-radius 0.9s;
+	transition: background-color 0.9s;
+	transition: border 0.9s;
+}
+
+li:hover {
+	background-color: rgb(8, 48, 53);
+	border: rgb(8, 48, 53) solid 0.5em;
+	border-radius:0.4em;
+}
+
+li a {
+	text-decoration: none;
+	color:white;
+}
+
+nav {
+	text-align: center;
+	color: white;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////*/

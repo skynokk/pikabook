@@ -1,5 +1,5 @@
 #bodyacceuil{
-	background-image: url(Images/fonds.jpg);
+	background-image: url(../Images/fonds.jpg);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	-webkit-background-size: cover;
