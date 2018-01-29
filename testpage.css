@@ -1,0 +1,111 @@
+#bodyacceuil{
+	background-image: url(Images/fonds.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+  
+}
+
+.logo{
+	width:500px;
+	height:100px;
+	border-radius:30px;
+}
+h1{
+	text-align: center;
+}
+.d1{
+	border-radius:5px;
+}
+
+.bouton{
+	border-radius:20px;
+}
+
+.container{
+	float:right;
+}
+
+#searchbar{
+	margin-left: 120px;
+}
+
+.champ{
+	width:1120px;
+	border-radius: 8px;
+
+}
+
+.btn_inscription{
+	border-radius:10px;
+	background-color:black;
+	color:white;
+	float:right;
+}
+
+.categorie{
+	opacity:0.6;
+	background-color:white;
+	color:black;
+	width:120px;
+	height:400px;
+	float:right;
+	border-style: solid;
+	border-color: white;
+	border-width:5px;
+}
+
+.cadre{
+
+	color:black;
+	padding-top: 20px;
+	background-color:white;
+	margin-left: 120px;
+	margin-right: 240px;
+	height: 40px;
+	border-style: solid;
+	border-width: 1px;
+}
+a{
+	color:black;
+}
+
+#frameone{
+	background-color: white;
+	opacity: 0.8;
+	margin-left: 120px;
+	width: 1200px;
+	height: 700px;
+}
+
+.imagebooks{
+	height: 200px;
+	width: 170px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.bodyframe{
+	background-color: white;
+}
+
+.divbooks{
+	opacity: 1;
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+	height: 300px;
+	width: 210px;
+	margin-left: 50px;
+	margin-right: 25px;
+	margin-top: 30px;
+	float: left; 
+}
+
+.navigator{
+	width: 150px;
+	margin-left: 150px;
+	margin-right: 40px;
+}
