@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="pagelivre.css">
-</head>
+<?php include 'header.inc.php'; ?>
 <body class="bodyframe">
 	<div class="menulivres">
 				<a href="#">Aventure</a>
@@ -21,7 +16,6 @@
 		<div class="divbooks"><img class="imagebooks" src="../Images/livre5.jpg"><br>Titre du livre<br>Auteur</div>
 		<div class="divbooks"><img class="imagebooks" src="../Images/livre6.jpg"><br>Titre du livre<br>Auteur</div>
 		<div class="divbooks"><img class="imagebooks" src="../Images/livre7.png"><br>Titre du livre<br>Auteur</div>
-		<div class="divbooks"><img class="imagebooks" src="../Images/placeholder.png"><br>Titre du livre<br>Auteur</div>
+		<div class="divbooks"><img class="imagebooks" src="../Images/avatar.jpg"><br>Titre du livre<br>Auteur</div>
 	</div>
-</body>
-</html>
+<?php include 'footer.inc.php'; ?>

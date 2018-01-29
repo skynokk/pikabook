@@ -1,11 +1,6 @@
 /*/////////////////////////////////Body//////////////////////////////////////////////////*/
-#bodyaccueil{
+body{
 	background-image: url(../Images/fonds.jpg);
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
 
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -83,5 +78,53 @@ li a {
 nav {
 	text-align: center;
 	color: white;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////PAGE LIVRE//////////////////////////////////////////////*/
+
+.divbooks{
+	text-align: center;
+	border-style: solid;
+	border-width: 1.5px;
+	background-color: white;
+	height: 30%;
+	width: 15%;
+	margin-left: 7%;
+	margin-top: 5%;
+	float: left;
+}
+
+.imagebooks{
+	height: 80%;
+	width: 90%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	background-size: 100% 100%;
+}
+.divprinc{
+	width: 90%;
+	margin-left: 5%;
+	height: 70em;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.menulivres{
+	margin-top: 2%;
+	background-color: rgba(170, 170, 170, 0.7);
+	line-height: 3em;
+	width: 90%;
+	height: 3em;
+	text-align: center;
+	margin-left: 5%;
+
+}
+.menulivres a{
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+	float: left;
+	margin-left: 11%;
+	font-size: 20px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
