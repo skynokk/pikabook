@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee Regular'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v11/TV7JXr7j4tW7mgYreANhGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body{
+  background-image: url(Images/fonds.jpg);
+  color: white;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.logo{
+	width:500px;
+	height:100px;
+	border-radius:30px;
+}
+
+h1{
+	text-align: center;
+}
+#searchbar{
+	margin-left: 20%;
+}
+.champ{
+	width:70%;
+	border-radius: 8px;
+}
+
+.bouton{
+  border-radius:8px;
+}
+
+.utilisateur{
+  background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
+}
+
+.Param{
+  color: black;
+}
+
+p{
+  margin-left: 3%;
+}
+
+.avatar{
+  width: 20%;
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 5%;
+}
