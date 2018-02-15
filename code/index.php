@@ -7,9 +7,9 @@
 			<script type="text/javascript" src="index.js"></script>
 	</head>
 
-	<body>
+	<body onload="disclaimer()">
 	<header>
-		<div >
+		<div>
 			<h1><img class="logo" src="../Images/logo4_1.png" alt=""/></h1>
 
 		     <div id="searchbar">
