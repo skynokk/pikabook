@@ -1,4 +1,4 @@
-<?php include 'fichier_inc/header.inc.php'; ?>
+<?php include '../fichier_inc/header.inc.php'; ?>
 
     <div id="div1al">
       <p id="p1al">
@@ -12,7 +12,7 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </div>
 
     <div id="div2al">
-    <img id="img1al" src="../Images/placeholder.png" alt="placeholder">
+    <img id="img1al" src="../../Images/placeholder.png" alt="placeholder">
     </div>
 
 <button id="button1al" type="button" name="button">Ajouter au panier <img id="img2" src="../Images/caddie.png" alt=""> </button>
@@ -43,4 +43,4 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </p>
   </div>
 
-<?php include 'fichier_inc/footer.inc.php'; ?>
+<?php include '../fichier_inc/footer.inc.php'; ?>

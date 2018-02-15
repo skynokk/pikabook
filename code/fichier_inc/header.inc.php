@@ -20,11 +20,11 @@ echo "<!DOCTYPE html>
 		    <div class=\"page\">
 				<div class=\"cadre\">
 					<nav>
-						<li><a class=\"navigator\" href=\"testframe.html\" target=\"frameune\">Présentation</a></li>
-						<li><a class=\"navigator\" href=\"#\">A la une</a></li>
+						<li><a class=\"navigator\" href=\"../index.php\">Présentation</a></li>
+						<li><a class=\"navigator\" href=\"../page_livre/pagelivre.php\">Livres</a></li>
 						<li><a class=\"navigator\" href=\"#\">Les Best-Sellers</a></li>
 						<li><a class=\"navigator\" href=\"#\">Les derniers ajouts</a></li>
-						<li><a class=\"navigator\" href=\"#\">Mon compte</a></li>
+						<li><a class=\"navigator\" href=\"../user/utilisateur.php\">Mon compte</a></li>
 					</nav>
 		</div>
 	</header>";
