@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pik a Book</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../Images/Pikachu_vect.png" />
-    <link rel="stylesheet" href="pikabook.css">
-    <script src="index.js" charset="utf-8"></script>
-  </head>
-  <body onload="disclaimer()">
-<header>
+	<head>
+		<meta charset="utf-8">
+	    <title>Pika Book</title>
+	    <link rel="stylesheet" href="pikabook.css">
+	</head>
 
-<?php include 'header.inc.php'; ?>
+	<body>
+	<header>
+		<div >
+			<h1><img class="logo" src="../Images/logo4_1.png" alt=""/></h1>
 
-</header>
+		     <div id="searchbar">
+		        <input class="champ" type="text" placeholder="Search..."/>
+		        <input class="bouton" type="button" value="&#128269; " />
+		    </div>
+
+		    <div class="page">
+				<div class="cadre">
+					<nav>
+						<li><a class="navigator" href="testframe.html" target="frameune">Présentation</a></li>
+						<li><a class="navigator" href="#">A la une</a></li>
+						<li><a class="navigator" href="#">Les Best-Sellers</a></li>
+						<li><a class="navigator" href="#">Les derniers ajouts</a></li>
+						<li><a class="navigator" href="#">Mon compte</a></li>
+					</nav>
+		</div>
+	</header>
 
 <div class="rewiew">
 <h1>Bienvenue sur Pik a book</h1>
@@ -22,5 +36,4 @@
 <p>Merci pour votre visite et bonne lecture !</p>
 </div>
 
-  </body>
-</html>
+<?php include 'fichier_inc/footer.inc.php'; ?>

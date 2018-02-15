@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../pikabook.css">
-    <title>Achat livre</title>
-  </head>
-  <body>
-    <div id="div1">
-      <p>
+<?php include 'fichier_inc/header.inc.php'; ?>
+
+    <div id="div1al">
+      <p id="p1al">
 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</br>
  Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla</br>
  ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, </br>
@@ -17,13 +11,13 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
       </p>
     </div>
 
-    <div id="div2">
-    <img id="img1" src="../Images/placeholder.png" alt="placeholder">
+    <div id="div2al">
+    <img id="img1al" src="../Images/placeholder.png" alt="placeholder">
     </div>
 
-<button id="button1" type="button" name="button">Ajouter au panier <img id="img2" src="../Images/caddie.png" alt=""> </button>
+<button id="button1al" type="button" name="button">Ajouter au panier <img id="img2" src="../Images/caddie.png" alt=""> </button>
 
-  <div class="div3">
+  <div class="div3al">
     <p>
       Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus,</br>
        propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu,</br>
@@ -36,7 +30,7 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </p>
   </div>
 
-  <div class="div4">
+  <div class="div4al">
     <p>
       Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus,</br>
        propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu,</br>
@@ -49,15 +43,4 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </p>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  </body>
-</html>
+<?php include 'fichier_inc/footer.inc.php'; ?>

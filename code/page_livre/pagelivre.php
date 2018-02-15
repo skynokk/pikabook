@@ -1,4 +1,5 @@
 <?php include 'header.inc.php'; ?>
+
 <body class="bodyframe">
 	<div class="menulivres">
 				<a href="#">Aventure</a>
@@ -18,4 +19,5 @@
 		<div class="divbooks"><img class="imagebooks" src="../Images/livre7.png"><br>Titre du livre<br>Auteur</div>
 		<div class="divbooks"><img class="imagebooks" src="../Images/avatar.jpg"><br>Titre du livre<br>Auteur</div>
 	</div>
+
 <?php include 'footer.inc.php'; ?>

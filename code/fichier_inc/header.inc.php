@@ -3,9 +3,11 @@ echo "<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset=\"utf-8\">
-	    <title>Pika book</title>
-	    <link rel=\"stylesheet\" href=\"pikabook.css\">
+	    <title>Pika Book</title>
+	    <link rel=\"stylesheet\" href=\"../pikabook.css\">
 	</head>
+
+	<body>
 	<header>
 		<div >
 			<h1><img class=\"logo\" src=\"../Images/logo4_1.png\" alt=\"\"/></h1>
@@ -23,7 +25,6 @@ echo "<!DOCTYPE html>
 						<li><a class=\"navigator\" href=\"#\">Les Best-Sellers</a></li>
 						<li><a class=\"navigator\" href=\"#\">Les derniers ajouts</a></li>
 						<li><a class=\"navigator\" href=\"#\">Mon compte</a></li>
-
 					</nav>
 		</div>
 	</header>";

@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="utilisateur.css">
-    <title>utilisateur</title>
-  </head>
-  <body>
+<?php include 'fichier_inc/header.inc.php'; ?>
+
     	<h1><img class="logo" src="../../Images/LOGO4_1.png" alt=""/></h1>
     <div id="searchbar">
            <input class="champ" type="text" placeholder="Search..."/>
@@ -18,18 +12,17 @@
          </div>
            <div class="Param">
              <H1>utilisateurs</H1>
-             <p>Mot de passe:</p>
-             <p>Mail:</p>
-             <p>Nom:</p>
-             <p>Prénom:</p>
-             <p>Date de naissance:</p>
-             <p>Adresse:</p>
-             <p>Pseudo</p>
-             <p>Mes commandes</p>
-             <p>listes d'envies</p>
+             <p class"pu">Mot de passe:</p>
+             <p class"pu">Mail:</p>
+             <p class"pu">Nom:</p>
+             <p class"pu">Prénom:</p>
+             <p class"pu">Date de naissance:</p>
+             <p class"pu">Adresse:</p>
+             <p class"pu">Pseudo</p>
+             <p class"pu">Mes commandes</p>
+             <p class"pu">listes d'envies</p>
 
            </div>
-
        </div>
-  </body>
-</html>
+
+<?php include 'fichier_inc/footer.inc.php'; ?>
