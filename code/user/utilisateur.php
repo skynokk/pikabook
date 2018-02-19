@@ -1,11 +1,5 @@
 <?php include '../fichier_inc/header.inc.php'; ?>
 
-    	<h1><img class="logo" src="../../Images/LOGO4_1.png" alt=""/></h1>
-    <div id="searchBar">
-           <input class="champ" type="text" placeholder="Search..."/>
-           <input class="bouton" type="button" value="&#128269; " />
-       </div>
-
        <div class="utilisateur">
          <div class="livrePref">
            <img src="../../Images/avatar.jpg" alt="avatar" class="avatar">

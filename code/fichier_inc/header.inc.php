@@ -10,7 +10,7 @@ echo "<!DOCTYPE html>
 	<body>
 	<header>
 		<div >
-			<h1><img class=\"logo\" src=\"../Images/logo4_1.png\" alt=\"\"/></h1>
+			<h1><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></h1>
 
 		     <div id=\"searchbar\">
 		        <input class=\"champ\" type=\"text\" placeholder=\"Search...\"/>
