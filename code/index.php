@@ -12,7 +12,7 @@
 		<div>
 			<h1><img class="logo" src="../Images/logo4_1.png" alt=""/></h1>
 
-		     <div id="searchbar">
+		     <div id="searchBar">
 		        <input class="champ" type="text" placeholder="Search..."/>
 		        <input class="bouton" type="button" value="&#128269; " />
 		    </div>
