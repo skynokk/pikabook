@@ -230,10 +230,13 @@ nav {
 .connexion{
   width: 70%;
   background-color: white;
-  color: white;
 }
 
 .connect{
   margin-left: 20%;
-  color: white;
+  background-color: #3cb179;
+}
+
+.label{
+  margin-left: 3%;
 }

@@ -1,32 +1,46 @@
 <?php include '../fichier_inc/header.inc.php'; ?>
 <br><br>
 <div class="connexion">
-  <input type="button" name="connect" value="Connexion" class="connect">
+  <p class="connect">Connexion</p>
   <br><br>
       <div class="Noms">
-      <label for="nom">Pseudo:</label>
+      <label for="nom" class="label">Pseudo:</label>
       <input type="text" id="nom" placeholder="Pseudo" />
     </div>
-    <div class="prenoms">
-      <label for="nom">Votre prénom:</label>
-      <input type="text" id="prenom" placeholder="Prénom" />
-    </div>
-    <div class="E-mail">
-      <label for="email">Votre E-mail: </label>
-  			   <input type="email" id="email" name="mail" placeholder="contact@exemple.com"/>
-         </div>
-         <div class="type">
-           <label for="nom">Sujet du message:</label>
-           <input type="text" id="sujet" placeholder="sujet" /><br>
-         </div>
-              <div class="message">
-                <label for="nom">Votre commentaire:</label>
-                <textarea id="commentaire" placeholder="Indiquez votre message"></textarea>
-              </div>
-              <div class="bouton">
-              <button type="button" name="button" onclick="bouton();">Envoyer votre message</button>
-              </div>
+  <div class="Mpd">
+    <label for="mdp">Mot de passe: </label>
+    <input type="password" id="mdp" name="mdp"/>
+  </div>
+  <input type="submit" name="valider" value="Valider">
+</div>
 
+<div class="Inscription">
+  <p class="incript">Pas encore inscrit? Rejoignez-nous!</p>
+  <div class="Noms">
+  <label for="nom" class="label">Nom:</label>
+  <input type="text" id="nom" placeholder="Nom" />
+  </div>
+  <div class="Noms">
+  <label for="nom" class="label">Prénom:</label>
+  <input type="text" id="nom" placeholder="Prénom" />
+  </div>
+  <div class="Adresse">
+  <label for="nom" class="label">Adresse mail:</label>
+  <input type="text" id="nom" placeholder="pikabook@gmail.com"/>
+  </div>
+  <div class="Pseudo">
+  <label for="nom" class="label">Pseudo:</label>
+  <input type="text" id="nom" placeholder="Pseudo"/>
+  </div>
+  <div class="Mpd">
+    <label for="mdp">Mot de passe: </label>
+    <input type="password" id="mdp" name="mdp"/>
+  </div>
+  <div class="Mpd">
+    <label for="mdp">Confirmation: </label>
+    <input type="password" id="mdp" name="mdp"/>
+  </div>
+  <input type="submit" name="inscrire" value="S'inscrire">
 </div>
 
 
