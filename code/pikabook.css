@@ -218,9 +218,14 @@ nav {
 
 .avatar{
   width: 20%;
-  float: right;
+  float: left;
   margin-top: 2.5%;
   margin-right: 5%;
+}
+
+.holder{
+  height: 40%;
+  width: 50%;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -241,4 +246,46 @@ nav {
   margin-left: 3%;
 }
 
+<<<<<<< HEAD
 
+=======
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////Accueil//////////////////////////////////////////////*/
+
+
+.rewiew{
+    background-color: rgba(254,254,254, 0.8);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
+
+.divPageBestSeller{
+	width: 90%;
+	margin-left: 5%;
+	height: 70em;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.divBestSeller{
+	text-align: center;
+	border-style: solid;
+	border-width: 1.5px;
+	background-color: white;
+	height: 30%;
+	width: 15%;
+	margin-left: 7%;
+	margin-top: 5%;
+	float: left;
+}
+
+.imageBestSeller{
+	height: 80%;
+	width: 90%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	background-size: 100% 100%;
+}
+>>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
