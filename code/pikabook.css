@@ -218,9 +218,14 @@ nav {
 
 .avatar{
   width: 20%;
-  float: right;
+  float: left;
   margin-top: 2.5%;
   margin-right: 5%;
+}
+
+.holder{
+  height: 40%;
+  width: 50%;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/

@@ -24,6 +24,11 @@
   <label for="nom" class="label">Prénom:</label>
   <input type="text" id="nom" placeholder="Prénom" />
   </div>
+  <p>Sexe:</p>
+			<input id="oui" type="radio" name="question1" value="Oui" checked/>
+			<label for="oui">Oui</label>
+			<input id="non" type="radio" name="question1" value="non"/>
+			<label for="non">Non</label
   <div class="Adresse">
   <label for="nom" class="label">Adresse mail:</label>
   <input type="text" id="nom" placeholder="pikabook@gmail.com"/>
