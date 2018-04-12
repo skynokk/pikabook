@@ -10,14 +10,14 @@
 	<body onload="disclaimer()">
 	<header>
 		<div>
-			<input type="button" class="co" value="Inscription" onclick="window.location.href='../connexion_inscription/connexioninscription.php';" />
+			<input type="button" class="co" value="Inscription" onclick="window.location.href='connexion_inscription/connexioninscription.php';" />
 				<form method="POST" action="" id="form">
 						<input type="text" id="pseudo" placeholder="Pseudo" />
 						<input type="password" id="mdp" name="mdp" placeholder="Mot de Passe"/>
 					 <input type="submit" name="valider" value="connexion">
 				</form>
 			<br/><br/>
-			
+
 			<h1><img class="logo" src="../Images/logo4_1.png" alt=""/></h1>
 
 		     <div id="searchBar">
