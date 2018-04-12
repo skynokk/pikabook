@@ -361,10 +361,10 @@ color: white;
 .titreDiv{
   text-align: center;
   margin-bottom: 2%;
+  background-color: #3cb179;
 }
 
 .divTitreDiv{
-  background-color: #3cb179;
   width:30%;
   margin:0 auto;
 }
@@ -391,6 +391,18 @@ color: white;
   color: white;
   border-color: #00a4d3;
   border-radius: 5px;
+}
+
+.erreur {
+   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  width: 80%;
+  /*height: 100%; */
+  margin-left: 10%;
+  background-color: #f4433675;
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
