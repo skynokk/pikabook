@@ -204,7 +204,7 @@ nav {
 .utilisateur{
   background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
   width: 80%;
-  height: 60%;
+  /*height: 100%; */
   margin-left: 10%;
 }
 
@@ -224,10 +224,38 @@ nav {
 }
 
 .holder{
-  height: 40%;
+  height: 10%;
+  width: 15%;
+}
+
+.dylan{
+  height: 10%;
+  width: 15%;
+}
+
+.favoris{
+  float: right;
   width: 50%;
 }
 
+.param{
+  float: left;
+  width: 50%;
+}
+
+.favco{
+  width: 100%;
+}
+
+.comm{
+  border-radius: 10%;
+  background-color:  #3cb179;
+  border-color:  #3cb179;
+}
+
+.h1{
+  text-align: left;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*/////////////////////////////////Connexion//////////////////////////////////////////////////*/
