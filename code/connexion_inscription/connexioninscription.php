@@ -21,7 +21,6 @@
   </form>
 
 <div class="Inscription">
-<<<<<<< HEAD
   <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
     <p class="incript">Pas encore inscrit ? Rejoignez-nous!</p>
     <div class="Noms">
@@ -31,6 +30,13 @@
     <div class="Noms">
       <label for="prenom" class="label">Prénom:</label>
       <input type="text" id="prenom" name="prenom" placeholder="Prénom" />
+    </div>
+    <div>
+    <p>Sexe:</p>
+      <input id="oui" type="radio" name="sexe" value="Oui" checked/>
+      <label for="oui">Oui</label>
+      <input id="non" type="radio" name="sexe" value="non"/>
+      <label for="non">Non</label>
     </div>
     <div class="Adresse">
       <label for="email" class="label">Adresse mail:</label>
@@ -50,48 +56,16 @@
     </div>
     <input type="submit" name="inscrire" value="S'inscrire">
   </form>
-=======
-  <p class="incript">Pas encore inscrit? Rejoignez-nous!</p>
-  <div class="Noms">
-  <label for="nom" class="label">Nom:</label>
-  <input type="text" id="nom" placeholder="Nom" />
-  </div>
-  <div class="Noms">
-  <label for="nom" class="label">Prénom:</label>
-  <input type="text" id="nom" placeholder="Prénom" />
-  </div>
-  <p>Sexe:</p>
-			<input id="oui" type="radio" name="question1" value="Oui" checked/>
-			<label for="oui">Oui</label>
-			<input id="non" type="radio" name="question1" value="non"/>
-			<label for="non">Non</label
-  <div class="Adresse">
-  <label for="nom" class="label">Adresse mail:</label>
-  <input type="text" id="nom" placeholder="pikabook@gmail.com"/>
-  </div>
-  <div class="Pseudo">
-  <label for="nom" class="label">Pseudo:</label>
-  <input type="text" id="nom" placeholder="Pseudo"/>
-  </div>
-  <div class="Mpd">
-    <label for="mdp">Mot de passe: </label>
-    <input type="password" id="mdp" name="mdp"/>
-  </div>
-  <div class="Mpd">
-    <label for="mdp">Confirmation: </label>
-    <input type="password" id="mdp" name="mdp"/>
-  </div>
-  <input type="submit" name="inscrire" value="S'inscrire">
->>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
 </div>
 
 <?php
   if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies su r le bouton s'inscrire*/ 
-    if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"])  ) /* on vérifie que tous les critères sont remplis*/{
-      echo "<h1><font color='red'>Entre commande</font></h1>";
+    if (isset($_POST['nom']) && isset($_POST["sexe"]) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '') /* on vérifie que tous les critères sont remplis*/{
+      var_dump($_POST['nom']);
+      echo "<h1><font color='red'>E".$_POST['nom']."</font></h1>";
     }
     else {
-      echo "<h1><font color='white'>Ca a pas marché</font></h1>";
+      echo "<p class='erreur'>Veuillez remplir tous les formulaires</p>";
     }
   }
   
