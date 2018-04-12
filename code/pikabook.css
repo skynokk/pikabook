@@ -340,35 +340,35 @@ color: white;
 .divPageBestSeller{
 	width: 90%;
 	margin-left: 5%;
+  margin-top: 3%;
 	height: 70em;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .divBestSeller{
-	text-align: center;
 	height: 30%;
 	width: 20%;
-	margin-left: 15%;
-	margin-top: 5%;
-	float: left;
+  float: left;
 }
 
 .imageBestSeller{
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .ligne{
+  margin-top: 1%;
   color: white;
   width: 90%;
-	margin-left: 5%;
-  float: left;
+	margin-left: 10%;
 	background-color: red;
 }
-
-.erreur {
-	color:red;
+.texteBestSeller{
+  background-color: blue;
+  float: left;
+  margin-left: 5%;
 }
-
-coucouuuuuuuuuuuuuuuu
+.break{
+  clear: both;
+}
 >>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
 >>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4
