@@ -184,12 +184,22 @@ nav {
   height:20%;
 }
 
+#prix_al{
+  background-color: white;
+  text-align: center;
+  width: 4em;
+  height: 1.4em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 11.3em;
+}
+
 #buttonAchatLivre{
   float : right;
   margin-top:1em;
   margin-right:23em;
   margin-bottom: 1em;
-  width:10em;
+  width: 9em;
 }
 
 .divAchatLivre3{
@@ -210,7 +220,13 @@ nav {
   float: right;
   margin-right: 19.1em;
   margin-top: 2.5em;
-  margin-bottom: 2em;
+}
+
+#footer_al{
+float: left;
+margin-left: 5em;
+margin-bottom: 2em;
+color: white;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
