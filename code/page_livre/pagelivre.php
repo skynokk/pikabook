@@ -1,6 +1,5 @@
 <?php include '../fichier_inc/header.inc.php'; ?>
 
-<body class="bodyFrame">
 	<div class="menuLivres">
 				<a href="#">Aventure</a>
 				<a href="#">Romance</a>

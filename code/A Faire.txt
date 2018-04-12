@@ -1,0 +1,5 @@
+Page A la Une
+Page Derniers Ajouts
+Lié la BDD
+Compléter les information dans la page Utilisateur
+Regarder si le site est responsive
