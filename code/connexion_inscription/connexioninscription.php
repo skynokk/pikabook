@@ -1,5 +1,5 @@
 <?php 
-//  include '../fichier_inc/connexionBDD.inc.php';
+  include '../fichier_inc/connexionBDD.inc.php';
   include '../fichier_inc/header.inc.php';      
 ?>
 <br><br>
@@ -57,7 +57,7 @@
           <br>
           <input type="text" name="rueNum" placeholder="Numéro rue">
           <br>
-          <textarea name="comment" form="usrform" placeholder="Complément d'adresse"></textarea>
+          <textarea name="cplmAdresse" form="usrform" placeholder="Complément d'adresse"></textarea>
           <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">--> 
 
         </td>
@@ -93,7 +93,7 @@
         <td><input type="password" id="mdpinscr" name="mdpinscr" placeholder="Mot de passe" /></td>
 
         <td class="tabEspaceInscri"><label for="confirmdp" class="label">Confirmation:</label></td><!-- /////CONFIRMATION MOT DE PASSE///// -->
-        <td><input type="password" id="confirmdp" name="confirmdp" placeholder="Confirer mot de passe" /></td>
+        <td><input type="password" id="confirmdp" name="confirmdp" placeholder="Confirmer mot de passe" /></td>
       </tr>
       
     </table>
@@ -108,15 +108,24 @@
 
 <?php
   if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/ 
-    if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '') /* on vérifie que tous les critères sont remplis*/{
-        if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {
-          echo "TEST";
-          var_dump($_POST);
-        }
-       
+    if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
+
+        if (preg_match("#^[a-z]$#", $_POST['nom']) && preg_match("^[a-z]$", $_POST['prenom']) && preg_match("^[a-z]$", $_POST['ville']) && preg_match("^[0-9]$", $_POST['codePostal'])) {
+
+          if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
+            echo "<div class='erreur'><p>Ca marche !</p></div>";
+          }
+          else {
+            echo "<div class='erreur'><p>Les mots de passe ne sont pas similaires</p></div>";
+          }
+        }   
+
+        else {
+          echo "<div class='erreur'><p>Une erreur est survenue. Veuillez vérifier les données rentrées.</p></div>";
+        }   
     }
     else {
-      echo "<p class='erreur'>Veuillez remplir tous les formulaires</p>";
+      echo "<div class='erreur'><p>Veuillez remplir tous les formulaires</p></div>";
     }
   }
   
