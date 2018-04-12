@@ -5,34 +5,30 @@
 <br><br>
 
 <!--/////////////////////////////////////////CONNEXION////////////////////////////////////// -->
-  <div class="connexion">
+  <div class="DivCon_Insc">
     <p class="titreDiv">Connexion</p>
-    <br><br>
 
     <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>> 
       <table class="tableauFormulaire">
         <tr><!-- /////PSEUDO///// -->
           <td><label for="nom" class="label">Pseudo:</label></td>
           <td><input type="text" id="pseudoconn" placeholder="Pseudo" /></td>
-        </tr>
 
-        <tr><!-- /////MOT DE PASSE///// -->
-          <td><label for="mdp">Mot de passe: </label></td>
+          <td><label for="mdp">Mot de passe: </label></td><!-- /////MOT DE PASSE///// -->
           <td><input type="password" id="mdp" name="mdpconn" placeholder="Mot de passe" /></td>
-        </tr>
-            
-        <tr>
+
           <td><input type="submit" name="valider" value="Valider"></td>
-        </tr>  
+        </tr>
     
       </table>
     </form>
+    <br>
   </div>
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 <!--/////////////////////////////////////////INSCRIPTION////////////////////////////////////// -->
-<div class="connexion">
+<div class="DivCon_Insc">
   <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
     <p class="titreDiv">Pas encore inscrit ? Rejoignez-nous!</p>
 
@@ -99,13 +95,13 @@
         <td><input type="password" id="confirmdp" name="confirmdp" placeholder="Confirer mot de passe" /></td>
       </tr>
       
-      <tr>
-        <td><input type="submit" name="inscrire" value="S'inscrire"></td>
-      </tr>
-      
     </table>
+
+    <br>
+    <p class="btnAlign"><input type="submit" name="inscrire" value="S'inscrire"></p>
     
   </form>
+  <br>
 </div>
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 

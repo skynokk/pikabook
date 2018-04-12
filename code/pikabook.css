@@ -321,7 +321,7 @@ color: white;
 
 /*/////////////////////////////////Connexion/Inscription//////////////////////////////////////////////////*/
 
-.connexion{
+.DivCon_Insc{
   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
   width: 80%;
   /*height: 100%; */
@@ -333,8 +333,9 @@ color: white;
 }
 
 .titreDiv{
-  margin-left: 20%;
+  text-align: center;
   background-color: #3cb179;
+  margin-bottom: 2%;
 }
 
 .label{
@@ -347,6 +348,11 @@ color: white;
 
 .tableauFormulaire{
   margin:0 auto;
+  width:80%;
+}
+
+.btnAlign{
+  text-align: center;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
