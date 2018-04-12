@@ -169,13 +169,32 @@ nav {
   width:50%;
   height : 20%;
 }
+<<<<<<< HEAD
+=======
+
+#prix_al{
+  background-color: white;
+  text-align: center;
+  width: 4em;
+  height: 1.4em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 11.3em;
+}
+
+>>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4
 #buttonAchatLivre{
   float : right;
   margin-top:1.5em;
   margin-right:23em;
+<<<<<<< HEAD
   width:5%;
   height:10%;
 
+=======
+  margin-bottom: 1em;
+  width: 9em;
+>>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4
 }
 
 .divAchatLivre3{
@@ -194,7 +213,13 @@ nav {
   float: right;
   margin-right: 19.1em;
   margin-top: 2.5em;
-  margin-bottom: 2em;
+}
+
+#footer_al{
+float: left;
+margin-left: 5em;
+margin-bottom: 2em;
+color: white;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -286,3 +311,55 @@ nav {
 .label{
   margin-left: 3%;
 }
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+
+=======
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////Accueil//////////////////////////////////////////////*/
+
+
+.rewiew{
+    background-color: rgba(254,254,254, 0.8);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
+
+.divPageBestSeller{
+	width: 90%;
+	margin-left: 5%;
+	height: 70em;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.divBestSeller{
+	text-align: center;
+	height: 30%;
+	width: 20%;
+	margin-left: 15%;
+	margin-top: 5%;
+	float: left;
+}
+
+.imageBestSeller{
+	height: 100%;
+	width: 100%;
+}
+.ligne{
+  color: white;
+  width: 90%;
+	margin-left: 5%;
+  float: left;
+	background-color: red;
+}
+
+.erreur {
+	color:red;
+}
+>>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
+>>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4

@@ -21,6 +21,10 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
 
 <img id="imgvote" src="../../Images/vote.png" alt="vote">
 
+<div id="prix_al">
+  [Prix €]
+</div>
+
 <button id="buttonAchatLivre" type="button" name="button">Ajouter au panier <img id="imgAchatLivre2" src="../../Images/caddie.png" alt=""> </button>
 
   <div class="divAchatLivre3">
@@ -48,4 +52,6 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </p>
   </div>
 
+<div id="footer_al">
 <?php include '../fichier_inc/footer.inc.php'; ?>
+</div>
