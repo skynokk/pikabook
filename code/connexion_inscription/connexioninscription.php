@@ -6,11 +6,11 @@
 
 <!--/////////////////////////////////////////CONNEXION////////////////////////////////////// -->
   <div class="connexion">
-    <p class="connect">Connexion</p>
+    <p class="titreDiv">Connexion</p>
     <br><br>
 
     <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>> 
-      <table>
+      <table class="tableauFormulaire">
         <tr><!-- /////PSEUDO///// -->
           <td><label for="nom" class="label">Pseudo:</label></td>
           <td><input type="text" id="pseudoconn" placeholder="Pseudo" /></td>
@@ -34,9 +34,9 @@
 <!--/////////////////////////////////////////INSCRIPTION////////////////////////////////////// -->
 <div class="connexion">
   <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
-    <p class="incript">Pas encore inscrit ? Rejoignez-nous!</p>
+    <p class="titreDiv">Pas encore inscrit ? Rejoignez-nous!</p>
 
-    <table>
+    <table class="tableauFormulaire">
       <tr>
         <td><label for="nom" class="label">Nom:</label></td><!-- /////NOM///// -->
         <td><input type="text" id="nom" name="nom" placeholder="Nom"/></td>
@@ -110,7 +110,7 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php
-  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies su r le bouton s'inscrire*/ 
+  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/ 
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '') /* on vérifie que tous les critères sont remplis*/{
         if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {
           echo "TEST";
