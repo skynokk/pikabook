@@ -344,8 +344,13 @@ color: white;
 
 .titreDiv{
   text-align: center;
-  background-color: #3cb179;
   margin-bottom: 2%;
+}
+
+.divTitreDiv{
+  background-color: #3cb179;
+  width:30%;
+  margin:0 auto;
 }
 
 .label{
@@ -363,6 +368,13 @@ color: white;
 
 .btnAlign{
   text-align: center;
+}
+
+.btnCouleur {
+  background-color: #00a4d3;
+  color: white;
+  border-color: #00a4d3;
+  border-radius: 5px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 

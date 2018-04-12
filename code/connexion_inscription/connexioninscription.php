@@ -6,7 +6,7 @@
 
 <!--/////////////////////////////////////////CONNEXION////////////////////////////////////// -->
   <div class="DivCon_Insc">
-    <p class="titreDiv">Connexion</p>
+    <div class="divTitreDiv"><p class="titreDiv">Connexion</p></div>
 
     <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>> 
       <table class="tableauFormulaire">
@@ -17,7 +17,7 @@
           <td><label for="mdp">Mot de passe: </label></td><!-- /////MOT DE PASSE///// -->
           <td><input type="password" id="mdp" name="mdpconn" placeholder="Mot de passe" /></td>
 
-          <td><input type="submit" name="valider" value="Valider"></td>
+          <td><input class="btnCouleur" type="submit" name="valider" value="Valider"></td>
         </tr>
     
       </table>
@@ -30,7 +30,7 @@
 <!--/////////////////////////////////////////INSCRIPTION////////////////////////////////////// -->
 <div class="DivCon_Insc">
   <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
-    <p class="titreDiv">Pas encore inscrit ? Rejoignez-nous!</p>
+    <div class="divTitreDiv"> <p class="titreDiv">Pas encore inscrit ? Rejoignez-nous!</p></div>
 
     <table class="tableauFormulaire">
       <tr>
@@ -57,7 +57,8 @@
           <br>
           <input type="text" name="rueNum" placeholder="Numéro rue">
           <br>
-          <input type="text" name="complementAdresse" placeholder="Complément d'adresse">
+          <textarea name="comment" form="usrform" placeholder="Complément d'adresse"></textarea>
+          <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">--> 
 
         </td>
       </tr>
@@ -98,7 +99,7 @@
     </table>
 
     <br>
-    <p class="btnAlign"><input type="submit" name="inscrire" value="S'inscrire"></p>
+    <p class="btnAlign"><input class="btnCouleur" type="submit" name="inscrire" value="S'inscrire"></p>
     
   </form>
   <br>
