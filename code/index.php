@@ -24,11 +24,7 @@
 						<li><a class="navigator" href="a_la_une/alaune.php">A la Une</a></li>
 						<li><a class="navigator" href="page_livre/pagelivre.php">Livres</a></li>
 						<li><a class="navigator" href="best_seller/bestseller.php">Les Best-Sellers</a></li>
-<<<<<<< HEAD
 						<li><a class="navigator" href="derniers_ajouts/derniersajouts.php">Les derniers ajouts</a></li>
-=======
-						<li><a class="navigator" href="#">Les derniers ajouts</a></li>
->>>>>>> 62a1cc890dc0be8ce2f6ec2eb1b08eed76fed8d7
 						<li><a class="navigator" href="user/utilisateur.php">Mon compte</a></li>
 					</nav>
 		</div>
@@ -44,4 +40,6 @@
 <br/>
 </div>
 
+<div id="footer_index">
 <?php include 'fichier_inc/footer.inc.php'; ?>
+</div>

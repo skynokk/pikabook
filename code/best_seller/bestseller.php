@@ -8,13 +8,13 @@
   <div class="break"></div>
 
   <div class="ligne">
-      <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre1.jpg" > </div>
-      <p class="texteBestSeller">Test</p>
+      <div class="texteBestSeller2"> <h2>Les Revenants</h2> </div>
+      <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre2.jpg" > </div>
   </div>
   <div class="break"></div>
   <div class="ligne">
-      <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre1.jpg" > </div>
-      <p class="texteBestSeller">Test</p>
+      <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre3.jpg" > </div>
+      <div class="texteBestSeller"> <h2>Les Animaux fantastiques</h2> </div>
   </div>
 </div>
 
