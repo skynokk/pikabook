@@ -25,7 +25,6 @@
 						<li><a class="navigator" href="page_livre/pagelivre.php">Livres</a></li>
 						<li><a class="navigator" href="best_seller/bestseller.php">Les Best-Sellers</a></li>
 						<li><a class="navigator" href="derniers_ajouts/derniersajouts.php">Les derniers ajouts</a></li>
-						<li><a class="navigator" href="#">Les derniers ajouts</a></li>
 						<li><a class="navigator" href="user/utilisateur.php">Mon compte</a></li>
 					</nav>
 		</div>
