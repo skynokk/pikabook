@@ -1,8 +1,7 @@
-Page A la Une
 Page Derniers Ajouts
 Page Mes Commandes
 Page Mon Panier
-Page 
-Lié la BDD
-Compléter les information dans la page Utilisateur
+Page
+Liï¿½ la BDD
+Complï¿½ter les information dans la page Utilisateur
 Regarder si le site est responsive

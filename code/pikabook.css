@@ -105,6 +105,9 @@ nav {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  border-width: 2px;
+  border-style: groove;
+  margin-top: 2%;
 }
 
 #footerIndex{
@@ -166,6 +169,8 @@ nav {
 	margin-left: 5%;
 	height: 60em;
 	background-color: rgba(0,55,72, 0.8);
+  border-width: 2px;
+  border-style: groove;
 }
 .menuLivres{
 	background-color: rgba(170, 170, 170, 0.3);
@@ -174,8 +179,11 @@ nav {
 	height: 3em;
 	text-align: center;
 	margin-left: 5%;
-
+  border-width: 2px;
+  border-style: groove;
+  margin-bottom: 1%;
 }
+
 .menuLivres a{
 	text-decoration: none;
 	color: white;
@@ -195,6 +203,8 @@ nav {
   margin-right: 20.4%;
   margin-top: 14.5%;
   width : 40%;
+  border-width: 2px;
+  border-style: groove;
 }
 
 #imgAchatLivre1{
@@ -202,6 +212,8 @@ nav {
   width : 20%;
   margin-top: 12.5%;
   margin-left: 13%;
+  border-width: 2px;
+  border-style: groove;
 }
 
 #imgvote{
@@ -229,6 +241,8 @@ nav {
   float: left;
   margin-top: 1%;
   margin-left: 11.6%;
+  border-width: 2px;
+  border-style: groove;
 }
 
 #buttonAchatLivre{
@@ -246,6 +260,8 @@ nav {
   float : left;
   margin-left: 13%;
   margin-top: 1%;
+  border-width: 2px;
+  border-style: groove;
 }
 
 .divAchatLivre4{
@@ -256,6 +272,8 @@ nav {
   float: left;
   margin-left: 13%;
   margin-top: 1%;
+  border-width: 2px;
+  border-style: groove;
 }
 
 #footeral{
@@ -276,8 +294,9 @@ color: white;
   margin-left: 10%;
   background-color: rgba(0,78,99, 0.8);
   color: white;
-  border-color: black;
-  font-family: 'ABeeZee', sans-serif;
+  border-color: white;
+  border-width: 2px;
+  border-style: groove;
 }
 
 .Param{
@@ -354,8 +373,7 @@ color: white;
   margin-left: 10%;
   background-color: rgba(0,55,72, 0.8);
   color: white;
-  border-color: black;
-  font-family: 'ABeeZee', sans-serif;
+  border-color: white;
 }
 
 .titreDiv{
@@ -458,8 +476,9 @@ footer{
   margin-left: 10%;
   background-color: rgba(0,78,99, 0.8);
   color: white;
-  border-color: black;
-  font-family: 'ABeeZee', sans-serif;
+  border-color: white;
+  border-width: 2px;
+  border-style: groove;
 }
 
 .actu{
