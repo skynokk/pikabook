@@ -20,7 +20,10 @@ include '../fichier_inc/header.inc.php';
               $nom = $pdo->prepare("SELECT `CliNom` FROM `client` WHERE 1");
               $nom->execute();
               $result = $nom->setFetchMode(PDO::FETCH_ASSOC);
-              echo $nom;
+              foreach ($nom as $row)
+              {
+                  echo $row[] . "\n";
+              }
               ?></></p> </div>
   </div>
 </div>
