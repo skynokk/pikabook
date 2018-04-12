@@ -37,6 +37,8 @@
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
+            <img src="../../Images/placeholder.png" alt="place" class="holder">
+            <img src="../../Images/placeholder.png" alt="place" class="holder">
        </div>
      </div>
 
