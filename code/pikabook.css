@@ -258,7 +258,7 @@ color: white;
   width: 80%;
   /*height: 100%; */
   margin-left: 10%;
-  background-color: rgba(0,55,72, 0.8);
+  background-color: rgba(0,78,99, 0.8);
   color: white;
   border-color: black;
   font-family: 'ABeeZee', sans-serif;
@@ -418,7 +418,52 @@ footer{
 
 /*////////////////////////////////////A LA UNE////////////////////////////////////////////////*/
 
+.box{
+  width: 80%;
+  height: 50em;
+  margin-left: 10%;
+  background-color: rgba(0,78,99, 0.8);
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
+}
 
+.actu{
+  width: 45%;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: left;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.lorem{
+  width: 40%;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: right;
+  margin-top: 5%;
+}
 
+.footer_une{
+  float: left;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  color: white;
+}
+.actualite{
+  width: 45%;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: left;
+  margin-top: 5%;
+  margin-left: 2%;
+}
 
+.loreme{
+  width: 40%;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: right;
+  margin-top: 5%;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
