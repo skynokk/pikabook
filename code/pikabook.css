@@ -11,7 +11,8 @@
 
 body{
 	background-image: url(../Images/fonds.jpg);
-
+  font-family: 'ABeeZee', sans-serif;
+  color: white;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -95,19 +96,31 @@ nav {
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*//////////////////////////////////PAGE LIVRE//////////////////////////////////////////////*/
+/*/////////////////////////////////Index/////////////////////////////////////////////////*/
 
-.bodyFrame{
-	background-color: black;
-	height: 100%;
-	width: 100%
+.rewiew{
+  background-color: rgba(0,55,72, 0.8);
+  color: white;
+  text-align: center;
 }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////Header/////////////////////////////////////////////////*/
+
+.co{
+  float: right;
+  margin-right: 1em;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////PAGE LIVRE//////////////////////////////////////////////*/
 
 .divBooks{
 	text-align: center;
-	border-style: solid;
-	border-width: 1.5px;
-	background-color: white;
+	background-color: grey;
+  opacity: 0.8;
 	height: 30%;
 	width: 15%;
 	margin-left: 7%;
@@ -125,8 +138,8 @@ nav {
 .divPageLivre{
 	width: 90%;
 	margin-left: 5%;
-	height: 70em;
-	background-color: rgba(255, 255, 255, 0.7);
+	height: 60em;
+	background-color: rgba(0,55,72, 0.8);
 }
 .menuLivres{
 	background-color: rgba(170, 170, 170, 0.3);
@@ -151,8 +164,7 @@ nav {
 /*//////////////////////////////////////ACHAT LIVRE//////////////////////////////////////////////*/
 
 #divAchatLivre1{
-  background-color : grey;
-  opacity: 0.9;
+  background-color : rgba(0,55,72, 0.8);
   float : right;
   margin-right: 20.4%;
   margin-top: 14.5%;
@@ -185,7 +197,7 @@ nav {
 }
 
 #prix_al{
-  background-color: white;
+  background-color: rgba(0,55,72, 0.8);
   text-align: center;
   width: 4%;
   float: left;
@@ -201,7 +213,7 @@ nav {
 }
 
 .divAchatLivre3{
-  background-color: grey;
+  background-color: rgba(0,55,72, 0.8);
   opacity: 0.9;
   width: 66.7%;
   height: auto;
@@ -211,7 +223,7 @@ nav {
 }
 
 .divAchatLivre4{
-  background-color: grey;
+  background-color: rgba(0,55,72, 0.8);
   opacity: 0.9;
   width: 66.7%;
   height: auto;
@@ -328,15 +340,6 @@ color: white;
 =======
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*//////////////////////////////////////Accueil//////////////////////////////////////////////*/
-
-
-.rewiew{
-    background-color: rgba(254,254,254, 0.8);
-}
-
-/*///////////////////////////////////////////////////////////////////////////////////////////*/
-
 /*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
 
 .divPageBestSeller{
@@ -371,6 +374,13 @@ color: white;
 	color:red;
 }
 
-coucouuuuuuuuuuuuuuuu
+/*/////////////////////////////////Footer/////////////////////////////////////////////////*/
+
+footer{
+  color: white;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
 >>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
 >>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4
