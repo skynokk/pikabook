@@ -319,20 +319,34 @@ color: white;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*/////////////////////////////////Connexion//////////////////////////////////////////////////*/
+/*/////////////////////////////////Connexion/Inscription//////////////////////////////////////////////////*/
 
 .connexion{
-  width: 70%;
-  background-color: white;
+  /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  width: 80%;
+  /*height: 100%; */
+  margin-left: 10%;
+  background-color: rgba(0,55,72, 0.8);
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
 }
 
-.connect{
+.titreDiv{
   margin-left: 20%;
   background-color: #3cb179;
 }
 
 .label{
   margin-left: 3%;
+}
+
+.tabEspaceInscri{
+  margin-left: 3%;
+}
+
+.tableauFormulaire{
+  margin:0 auto;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
