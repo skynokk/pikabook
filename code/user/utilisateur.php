@@ -2,6 +2,7 @@
 
 <br><br>
        <div class="utilisateur">
+         <div class="blanc">
          <div class="livrePref">
            <img src="../../Images/avatar.jpg" alt="avatar" class="avatar">
          </div>
@@ -25,9 +26,10 @@
                 mollitia animi, id est laborum et dolorum fuga. Et harum quidem"</p>
            </div>
        </div>
-       <br>
+     </div>
+       <br><br><br><br><br><br>
        <div class="lastAchat">
-         <p>Mes livres</p>
+         <h2>Mes livres</h2>
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
