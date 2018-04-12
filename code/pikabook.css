@@ -107,7 +107,7 @@ nav {
   margin-right: auto;
 }
 
-#footer_index{
+#footerIndex{
   position: absolute;
   bottom: 0;
   margin-top: 2em;
@@ -121,11 +121,22 @@ nav {
 .co{
   float: right;
   margin-right: 1%;
+  background-color: #00a4d3;
+  color: white;
+  border-color: #00a4d3;
+  border-radius: 5px;
 }
 
 #form{
   float: right;
   margin-right: 1%;
+}
+
+.boutonco{
+  background-color: #00a4d3;
+  color: white;
+  border-color: #00a4d3;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -211,7 +222,7 @@ nav {
   height:20%;
 }
 
-#prix_al{
+#prixal{
   background-color: rgba(0,55,72, 0.8);
   text-align: center;
   width: 4%;
@@ -247,7 +258,7 @@ nav {
   margin-top: 1%;
 }
 
-#footer_al{
+#footeral{
 float: left;
 margin-left: 10%;
 margin-bottom: 1%;
@@ -263,7 +274,7 @@ color: white;
   width: 80%;
   /*height: 100%; */
   margin-left: 10%;
-  background-color: rgba(0,55,72, 0.8);
+  background-color: rgba(0,78,99, 0.8);
   color: white;
   border-color: black;
   font-family: 'ABeeZee', sans-serif;
@@ -453,7 +464,49 @@ footer{
 
 /*////////////////////////////////////A LA UNE////////////////////////////////////////////////*/
 
+.box{
+  width: 80%;
+  height: 53em;
+  margin-left: 10%;
+  background-color: rgba(0,78,99, 0.8);
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
+}
 
+.actu{
+  width: 45%;
+  height: 11em;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: left;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.lorem{
+  width: 40%;
+  height: 11em;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.footerune{
+  float: left;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  color: white;
+}
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////derniers ajouts/////////////////////////////////////*/
+
+.divDerniersAjouts{
+  margin-left:25%;
+  height: 20em;
+  width: 50%;
+  background-color:#004e63;
+}

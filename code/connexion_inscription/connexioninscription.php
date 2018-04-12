@@ -132,16 +132,4 @@
 
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <?php include '../fichier_inc/footer.inc.php'; ?>
