@@ -20,16 +20,19 @@
              <h2>Le remède mortel</h2>
              <h5>Auteur: James DASHNER</h5>
              <img src="../../Images/remede.JPG" alt="Dylan" class="dylan">
-             <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-               voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                cupiditate non provident, similique sunt in culpa qui officiadeserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem"</p>
+             <p>Le WICKED a tout volé à Thomas : sa vie, sa mémoire et maintenant ses seuls amis. Mais
+                l'épreuve touche à sa fin. Ne reste qu'un dernier test... Terrifiant. Cependant, Thomas
+                 a retrouvé assez de souvenirs pour ne plus faire confiance à l'organisation.
+                 Il a triomphé du Labyrinthe. Il a survécu à la Terre Brûlée. Il fera tout pour
+                  sauver ses amis, même si la vérité risque de provoquer la fin de tout.</p>
            </div>
        </div>
      </div>
        <br><br><br><br><br><br>
        <div class="lastAchat">
          <h2>Mes livres</h2>
+            <img src="../../Images/placeholder.png" alt="place" class="holder">
+            <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">
             <img src="../../Images/placeholder.png" alt="place" class="holder">

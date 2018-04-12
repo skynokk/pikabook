@@ -162,16 +162,16 @@ nav {
 #imgAchatLivre1{
   float : left;
   width : 20%;
-  margin-top:11.5em;
-  margin-left:12em;
+  margin-top: 12.5%;
+  margin-left: 13%;
 }
 
 #imgvote{
   width: 10%;
   height: 10%;
   float: left;
-  margin-top: 0.4em;
-  margin-left: 16.5em;
+  margin-top: 0.6%;
+  margin-left: 18%;
 }
 
 #imgmoyenne{
@@ -187,45 +187,43 @@ nav {
 #prix_al{
   background-color: white;
   text-align: center;
-  width: 4em;
-  height: 1.4em;
+  width: 4%;
   float: left;
-  margin-top: 1em;
-  margin-left: 11.3em;
+  margin-top: 1%;
+  margin-left: 11.6%;
 }
 
 #buttonAchatLivre{
   float : right;
-  margin-top:1em;
-  margin-right:23em;
-  margin-bottom: 1em;
-  width: 9em;
+  margin-top: 1%;
+  margin-right: 20.4%;
+  width: 8%;
 }
 
 .divAchatLivre3{
   background-color: grey;
   opacity: 0.9;
-  width: 64em;
+  width: 66.7%;
   height: auto;
-  float: right;
-  margin-right: 19.1em;
-  margin-top: 0.5em;
+  float : left;
+  margin-left: 13%;
+  margin-top: 1%;
 }
 
 .divAchatLivre4{
   background-color: grey;
   opacity: 0.9;
-  width: 64em;
+  width: 66.7%;
   height: auto;
-  float: right;
-  margin-right: 19.1em;
-  margin-top: 2.5em;
+  float: left;
+  margin-left: 13%;
+  margin-top: 1%;
 }
 
 #footer_al{
 float: left;
-margin-left: 5em;
-margin-bottom: 2em;
+margin-left: 10%;
+margin-bottom: 1%;
 color: white;
 }
 
@@ -234,14 +232,19 @@ color: white;
 /*//////////////////////////////////////UTILISATEUR/////////////////////////////////////////////*/
 
 .utilisateur{
-  background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
   width: 80%;
   /*height: 100%; */
   margin-left: 10%;
+  background-color: rgba(0,55,72, 0.8);
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 .Param{
-  color: black;
+  color: white;
+  width: 10%;
 }
 
 .pu{
@@ -249,7 +252,7 @@ color: white;
 }
 
 .avatar{
-  width: 20%;
+  width: 10%;
   float: left;
   margin-top: 2.5%;
   margin-right: 5%;
@@ -262,14 +265,15 @@ color: white;
 
 .dylan{
   height: 10%;
-  width: 15%;
+  width: 20%;
 }
 
 .favoris{
   float: right;
-  width: 50%;
-  background-color: rgba(0,55,72, 0.8);
-
+  width: 35%;
+  height: 10%;
+  /*background-color: rgba(0,55,72, 0.8);*/
+  background-color: red
 
 }
 
@@ -294,7 +298,7 @@ color: white;
 
 .lastAchat{
   background-color: rgba(0,55,72, 0.8);
-  margin-top: 20%;
+  margin-top: 1%;
 }
 
 .blanc{
