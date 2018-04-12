@@ -1,5 +1,6 @@
 <?php
 include '../fichier_inc/header.inc.php';
+include '../fichier_inc/connexionBDD.inc.php';
 ?>
 
 <div class="divPageBestSeller">
@@ -22,7 +23,7 @@ include '../fichier_inc/header.inc.php';
               $result = $nom->setFetchMode(PDO::FETCH_ASSOC);
               foreach ($nom as $row)
               {
-                  echo $row[] . "\n";
+                  echo $row . "\n";
               }
               ?></></p> </div>
   </div>
