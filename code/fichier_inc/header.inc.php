@@ -14,7 +14,7 @@ echo "<!DOCTYPE html>
 		<form method=\"POST\" action=\"\" id=\"form\">
 				<input type=\"text\" id=\"pseudo\" placeholder=\"Pseudo\" />
 				<input type=\"password\" id=\"mdp\" name=\"mdp\" placeholder=\"Mot de Passe\"/>
-			 <input type=\"submit\" name=\"valider\" value=\"connexion\">
+			 <input class=\"boutonco\" type=\"submit\" name=\"valider\" value=\"connexion\">
 		</form>
 	<br/><br/>
 

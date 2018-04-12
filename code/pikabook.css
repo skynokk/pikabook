@@ -121,11 +121,22 @@ nav {
 .co{
   float: right;
   margin-right: 1%;
+  background-color: #00a4d3;
+  color: white;
+  border-color: #00a4d3;
+  border-radius: 5px;
 }
 
 #form{
   float: right;
   margin-right: 1%;
+}
+
+.boutonco{
+  background-color: #00a4d3;
+  color: white;
+  border-color: #00a4d3;
+  border-radius: 5px;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
