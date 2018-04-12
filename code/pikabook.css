@@ -256,7 +256,7 @@ color: white;
 
 .Param{
   color: white;
-  width: 20%;
+  width: 10%;
 }
 
 .pu{
@@ -264,7 +264,7 @@ color: white;
 }
 
 .avatar{
-  width: 20%;
+  width: 10%;
   float: left;
   margin-top: 2.5%;
   margin-right: 5%;
@@ -277,13 +277,15 @@ color: white;
 
 .dylan{
   height: 10%;
-  width: 15%;
+  width: 20%;
 }
 
 .favoris{
   float: right;
-  width: 30%;
-  background-color: rgba(0,55,72, 0.8);
+  width: 35%;
+  height: 10%;
+  /*background-color: rgba(0,55,72, 0.8);*/
+  background-color: red
 
 }
 
@@ -308,7 +310,7 @@ color: white;
 
 .lastAchat{
   background-color: rgba(0,55,72, 0.8);
-  margin-top: 20%;
+  margin-top: 1%;
 }
 
 .blanc{
@@ -332,12 +334,6 @@ color: white;
 .label{
   margin-left: 3%;
 }
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-
-=======
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
@@ -345,34 +341,37 @@ color: white;
 .divPageBestSeller{
 	width: 90%;
 	margin-left: 5%;
+  margin-top: 3%;
 	height: 70em;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .divBestSeller{
-	text-align: center;
 	height: 30%;
 	width: 20%;
-	margin-left: 15%;
-	margin-top: 5%;
-	float: left;
+  float: left;
 }
 
 .imageBestSeller{
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .ligne{
+  margin-top: 1%;
   color: white;
   width: 90%;
-	margin-left: 5%;
-  float: left;
+	margin-left: 10%;
 	background-color: red;
 }
-
-.erreur {
-	color:red;
+.texteBestSeller{
+  background-color: blue;
+  float: left;
+  margin-left: 5%;
 }
+.break{
+  clear: both;
+}
+<<<<<<< HEAD
 
 /*/////////////////////////////////Footer/////////////////////////////////////////////////*/
 
@@ -384,3 +383,5 @@ footer{
 
 >>>>>>> bed42a68ba9c859d85c5fee92ae40a6a30e253ad
 >>>>>>> d08e8e2c149218bf87814bf7e747ab641581a2e4
+=======
+>>>>>>> 62a1cc890dc0be8ce2f6ec2eb1b08eed76fed8d7
