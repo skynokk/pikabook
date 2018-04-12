@@ -4,6 +4,7 @@
     <br>
         <h1>A la une</h1>
     <div class="actu">
+      <h3>Actualités</h3>
       <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
         avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années
         1500Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
@@ -15,9 +16,9 @@
     </div>
     <!--<br><br><br><br><br><br><br><br><br><br><br>-->
     <div class="actu">
+      <h3>Actualités</h3>
       <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
         avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années
-        1500Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
           </p>
     </div>
     <div class="lorem">
@@ -25,10 +26,11 @@
         avant impression. Le Lorem Ipsum est </p>
     </div>
     <div class="actu">
-      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
-        avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années
-        1500Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
+      <h3>Actualités</h3>
+      <p>Le Lorem Ipsum est simplement du faux eergrhtjtrkuytrjrstnuebtniut <br>
+        <img src="../../Images/placeholder.png" alt="place" class="holder">
           </p>
+
     </div>
     <div class="lorem">
       <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page

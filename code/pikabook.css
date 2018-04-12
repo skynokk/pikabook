@@ -454,7 +454,7 @@ footer{
 
 .box{
   width: 80%;
-  height: 45em;
+  height: 50em;
   margin-left: 10%;
   background-color: rgba(0,78,99, 0.8);
   color: white;
@@ -464,7 +464,7 @@ footer{
 
 .actu{
   width: 45%;
-  height: 9em;
+  height: 11em;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: left;
@@ -473,7 +473,7 @@ footer{
 }
 .lorem{
   width: 40%;
-  height: 9em;
+  height: 11em;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: right;
