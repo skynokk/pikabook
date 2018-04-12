@@ -22,7 +22,7 @@ echo "<!DOCTYPE html>
 					<nav>
 						<li><a class=\"navigator\" href=\"../index.php\">Présentation</a></li>
 						<li><a class=\"navigator\" href=\"../page_livre/pagelivre.php\">Livres</a></li>
-						<li><a class=\"navigator\" href=\"#\">Les Best-Sellers</a></li>
+						<li><a class=\"navigator\" href=\"../best_seller/bestseller.php\">Les Best-Sellers</a></li>
 						<li><a class=\"navigator\" href=\"#\">Les derniers ajouts</a></li>
 						<li><a class=\"navigator\" href=\"../user/utilisateur.php\">Mon compte</a></li>
 					</nav>
