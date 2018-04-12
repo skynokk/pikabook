@@ -1,4 +1,5 @@
 <?php
+include '../fichier_inc/connexionBDD.inc.php';
 echo "<!DOCTYPE html>
 <html>
 	<head>
