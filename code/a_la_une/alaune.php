@@ -27,6 +27,6 @@
 
 
 
-<div class="footer_une">
+<div class="footerune">
 <?php include '../fichier_inc/footer.inc.php'; ?>
 <div>

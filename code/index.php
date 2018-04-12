@@ -48,6 +48,6 @@
 <br/>
 </div>
 
-<div id="footer_index">
+<div id="footerIndex">
 <?php include 'fichier_inc/footer.inc.php'; ?>
 </div>
