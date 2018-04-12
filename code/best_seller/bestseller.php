@@ -1,4 +1,6 @@
-<?php include '../fichier_inc/header.inc.php'; ?>
+<?php
+include '../fichier_inc/header.inc.php';
+?>
 
 <div class="divPageBestSeller">
   <div class="ligne">
@@ -14,7 +16,12 @@
   <div class="break"></div>
   <div class="ligne">
       <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre3.jpg" > </div>
-      <div class="texteBestSeller"> <h2>Les Animaux fantastiques</h2> </div>
+      <div class="texteBestSeller"> <h2>Les Animaux fantastiques</h2><br><p><?php
+              $nom = $pdo->prepare("SELECT `CliNom` FROM `client` WHERE 1");
+              $nom->execute();
+              $result = $nom->setFetchMode(PDO::FETCH_ASSOC);
+              echo $nom;
+              ?></></p> </div>
   </div>
 </div>
 
