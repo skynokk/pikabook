@@ -537,10 +537,15 @@ footer{
 /*///////////////////////////////////////derniers ajouts/////////////////////////////////////*/
 
 .divDerniersAjouts{
-  margin-left:25%;
-  height: 40em;
-  width: 50%;
+  margin-left:10%;
+  margin-top: 3%;
+  height: auto;
+  width: 80%;
   background-color:rgba(0,78,99, 0.8);
+  border-color: white;
+  border-width: 2px;
+  border-style: groove;
+
 }
 
 .divNouv{
@@ -551,11 +556,15 @@ footer{
 
 .infoLivre{
   background-color: rgba(0,55,72, 0.8);
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2%;
 }
+
 .img{
-  background-color: blue;
   width: 30%;
-  margin-left: 2%;
+  margin-left: 4%;
+  padding-bottom: 5%;;
 }
 
 .holderAjout{
@@ -563,8 +572,13 @@ footer{
 }
 
 .resumAjout{
-  width: 50%;
+  width: 60%;
   float: right;
+  margin-right: 8%;
+}
+
+.resum{
+text-align:justify;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -582,4 +596,35 @@ footer{
 .panier{
   width: 5%;
   float: right;
+}
+.commande{
+  float: right;
+  margin-top: 2%;
+  background-color: #00a4d3;
+  border-color: #00a4d3;
+  color: white;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////PagePanier//////////////////////////////////////////////////*/
+
+.pagePanier{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  height: 50em;
+  background-color: rgba(0,55,72, 0.8);
+  border-width: 2px;
+  border-style: groove;
+}
+.panier{
+  width: 5%;
+  float: right;
+}
+.commande{
+  float: right;
+  margin-top: 2%;
+  background-color: #00a4d3;
+  border-color: #00a4d3;
+  color: white;
 }

@@ -1,6 +1,5 @@
 <?php 
-  include '../fichier_inc/connexionBDD.inc.php';
-  include '../fichier_inc/header.inc.php';      
+  include '../fichier_inc/header.inc.php';
 ?>
 <br><br>
 
@@ -8,7 +7,7 @@
   <div class="DivCon_Insc">
     <div class="divTitreDiv"><p class="titreDiv">Connexion</p></div>
 
-    <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>> 
+    <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
       <table class="tableauFormulaire">
         <tr><!-- /////PSEUDO///// -->
           <td><label for="nom" class="label">Pseudo:</label></td>
@@ -19,7 +18,7 @@
 
           <td><input class="btnCouleur" type="submit" name="valider" value="Valider"></td>
         </tr>
-    
+
       </table>
     </form>
     <br>
@@ -64,11 +63,11 @@
           <br>
           <textarea name="cplmAdresse" form="formInscription" placeholder="Complément d'adresse"><?php if (isset($_POST['cplmAdresse'])) { echo "'".$_POST['cplmAdresse']."'";
       }?></textarea>
-          <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">--> 
+          <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">-->
 
         </td>
       </tr>
-      
+
       <tr><!-- /////PRENOM///// -->
         <td><label for="prenom" class="label">Prénom:</label></td>
         <td> <input type="text" id="prenom" name="prenom" placeholder="Prénom" value=<?php if (isset($_POST['prenom'])) { echo "'".$_POST['prenom']."'";
@@ -105,22 +104,22 @@
         <td class="tabEspaceInscri"><label for="confirmdp" class="label">Confirmation mot de passe:</label></td><!-- /////CONFIRMATION MOT DE PASSE///// -->
         <td><input type="password" id="confirmdp" name="confirmdp" placeholder="Confirmer mot de passe" /></td>
       </tr>
-      
+
     </table>
 
     <br>
     <p class="btnAlign"><input class="btnCouleur" type="submit" name="inscrire" value="S'inscrire"></p>
-    
+
   </form>
   <br>
 </div>
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php
-  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/ 
+  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
 
-        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES*/ 
+        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES*/
 
           if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
             echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
@@ -148,17 +147,17 @@
           else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES*/
             echo "<div class='erreur'><p>Les mots de passe ne sont pas similaires</p></div>";
           }
-        }   
+        }
 
         else {/* SI L'UTILISATEUR N'A PAS RESPECTE LES FORMULAIRES*/
           echo "<div class='erreur'><p>Une erreur est survenue. Veuillez vérifier les données rentrées.</p></div>";
-        }   
+        }
     }
     else {/* SI LES FORMULAIRES NE SONT PAS TOUS REMPLIES (formulaire de copmlément d'adresse n'est pas obligatoire*/
       echo "<div class='erreur'><p>Veuillez remplir tous les formulaires</p></div>";
     }
   }
-  
+
 
 ?>
 
