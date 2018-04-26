@@ -1,6 +1,5 @@
 <?php
 include '../fichier_inc/header.inc.php';
-include '../fichier_inc/connexionBDD.inc.php';
 ?>
 
 <div class="divPageBestSeller">

@@ -1,3 +1,5 @@
+<?php include("connexionBDD.inc.php") ?>
+
 <?php
 echo "<!DOCTYPE html>
 <html>
