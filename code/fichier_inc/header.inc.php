@@ -16,7 +16,9 @@ echo "<!DOCTYPE html>
 				<input type=\"password\" id=\"mdp\" name=\"mdp\" placeholder=\"Mot de Passe\"/>
 			 <input class=\"boutonco\" type=\"submit\" name=\"valider\" value=\"connexion\">
 		</form>
+
 	<br/><br/>
+	<a href=\"../vos_commandes/voscommandes.php\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
 
 			<h1><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></h1>
 

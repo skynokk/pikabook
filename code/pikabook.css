@@ -423,6 +423,18 @@ color: white;
   font-family: 'ABeeZee', sans-serif;
   text-align: center;
 }
+
+.confirmation {
+   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  width: 80%;
+  /*height: 100%; */
+  margin-left: 10%;
+  background-color: #8bc34a8a;
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
@@ -565,8 +577,12 @@ footer{
   width: 90%;
   margin-left: 5%;
   margin-top: 3%;
-  height: 70em;
+  height: 50em;
   background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
   border-style: groove;
+}
+.panier{
+  width: 5%;
+  float: right;
 }
