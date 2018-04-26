@@ -538,7 +538,48 @@ footer{
 
 .divDerniersAjouts{
   margin-left:25%;
-  height: 20em;
+  height: 40em;
   width: 50%;
-  background-color:#004e63;
+  background-color:rgba(0,78,99, 0.8);
+}
+
+.divNouv{
+  width: 20%;
+  margin-bottom: 2%;
+  background-color: #3cb179;
+}
+
+.infoLivre{
+  background-color: rgba(0,55,72, 0.8);
+}
+.img{
+  background-color: blue;
+  width: 30%;
+  margin-left: 2%;
+}
+
+.holderAjout{
+  width: 70%;
+}
+
+.resumAjout{
+  width: 50%;
+  float: right;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////PageCommandes//////////////////////////////////////////////*/
+
+.pageCommandes{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  height: 50em;
+  background-color: rgba(0,55,72, 0.8);
+  border-width: 2px;
+  border-style: groove;
+}
+.panier{
+  width: 5%;
+  float: right;
 }
