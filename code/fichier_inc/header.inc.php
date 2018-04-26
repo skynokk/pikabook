@@ -18,7 +18,9 @@ echo "<!DOCTYPE html>
 		</form>
 
 	<br/><br/>
-	<a href=\"../vos_commandes/voscommandes.php\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"../\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"../vos_commandes/voscommandes.php\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
+
 
 			<h1><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></h1>
 
