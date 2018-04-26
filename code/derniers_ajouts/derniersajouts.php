@@ -1,10 +1,11 @@
 <?php include '../fichier_inc/header.inc.php'; ?>
 
 <div class="divDerniersAjouts">
-    <div class="divNouv"><p class="titreDiv">Nouveautés</p></div><br><br>
+    <div class="divNouv"><p class="titreDiv">Derniers ajouts</p></div><br><br>
 
 <div class="infoLivre">
     <div class="img">
+      <br>
     <img src="../../Images/placeholder.png" alt="placeholder" class="holderAjout">
     </div>
 <div class="resumAjout">
