@@ -123,7 +123,17 @@
         if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES*/ 
 
           if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
-            echo "<div class='erreur'><p>Ca marche !</p></div>";
+            echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
+
+            ucfirst($_POST['nom']);
+            var_dump($_POST['nom']);
+           /*$nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$_POST['nom']."', '".$_POST['prenom']."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");*/
+
+
+
+
+
+
           }
           else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES*/
             echo "<div class='erreur'><p>Les mots de passe ne sont pas similaires</p></div>";

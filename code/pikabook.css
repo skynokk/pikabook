@@ -423,6 +423,18 @@ color: white;
   font-family: 'ABeeZee', sans-serif;
   text-align: center;
 }
+
+.confirmation {
+   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
+  width: 80%;
+  /*height: 100%; */
+  margin-left: 10%;
+  background-color: #8bc34a8a;
+  color: white;
+  border-color: black;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*//////////////////////////////////////BestSeller//////////////////////////////////////////////*/
