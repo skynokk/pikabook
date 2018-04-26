@@ -556,13 +556,15 @@ footer{
 
 .infoLivre{
   background-color: rgba(0,55,72, 0.8);
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   margin-bottom: 2%;
 }
 
 .img{
   width: 30%;
-  margin-left: 2%;
+  margin-left: 4%;
+  padding-bottom: 5%;;
 }
 
 .holderAjout{
@@ -572,6 +574,11 @@ footer{
 .resumAjout{
   width: 60%;
   float: right;
+  margin-right: 8%;
+}
+
+.resum{
+text-align:justify;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
