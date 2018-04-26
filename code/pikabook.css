@@ -530,3 +530,16 @@ footer{
   width: 50%;
   background-color:#004e63;
 }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////PageCommandes//////////////////////////////////////////////*/
+
+.pageCommandes{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  height: 70em;
+  background-color: rgba(0,55,72, 0.8);
+  border-width: 2px;
+  border-style: groove;
+}

@@ -18,12 +18,10 @@ include '../fichier_inc/connexionBDD.inc.php';
   <div class="ligne">
       <div class="divBestSeller"><img class="imageBestSeller" src="../../Images/livre3.jpg" > </div>
       <div class="texteBestSeller"> <h2>Les Animaux fantastiques</h2><br><p><?php
-              $nom = $pdo->prepare("SELECT `CliNom` FROM `client` WHERE 1");
-              $nom->execute();
-              $result = $nom->setFetchMode(PDO::FETCH_ASSOC);
-              foreach ($nom as $row)
-              {
-                  echo $row . "\n";
+              $nom = $pdo->query('SELECT `CliNom` FROM `client`');
+              while ($row = $nom->fetch()) {
+                var_dump($row);
+                echo $row['CliNom'] . "\n";
               }
               ?></></p> </div>
   </div>
