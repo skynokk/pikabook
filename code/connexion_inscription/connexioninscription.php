@@ -119,7 +119,7 @@
   if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
 
-        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES*/
+        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum']) && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance'])) {/*VERIFICATION DES DONNEES SAISIES*/
 
           if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
             echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
@@ -129,15 +129,15 @@
 
            $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");
 
-           
+           $dernierID = $pdo -> lastInsertId();
+           var_dump($_POST['dateNaissance']);
 
-           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."')");
+           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
 
 
 /*CHOSE A FAIRE 
 - complexifier les vérifications
 - imposer des conditions pour le mot de passe
-- rajouter l'adresse dans la bdd
 - virer les guillemets quand tu refresh le complement d'adresse
 */
 
@@ -145,6 +145,7 @@
 
           }
           else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES*/
+            var_dump($_POST['dateNaissance']);
             echo "<div class='erreur'><p>Les mots de passe ne sont pas similaires</p></div>";
           }
         }
