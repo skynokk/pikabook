@@ -583,3 +583,10 @@ footer{
   width: 5%;
   float: right;
 }
+.commande{
+  float: right;
+  margin-top: 2%;
+  background-color: #00a4d3;
+  border-color: #00a4d3;
+  color: white;
+}
