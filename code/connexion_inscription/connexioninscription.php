@@ -29,7 +29,7 @@
 
 <!--/////////////////////////////////////////INSCRIPTION////////////////////////////////////// -->
 <div class="DivCon_Insc">
-  <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?>>
+  <form method="POST" action=<?php echo $_SERVER["PHP_SELF"]; ?> id="formInscription">
     <div class="divTitreDiv"> <p class="titreDiv">Pas encore inscrit ? Rejoignez-nous!</p></div>
 
     <table class="tableauFormulaire">
@@ -62,7 +62,7 @@
           <input type="text" name="rueNum" placeholder="Numéro rue" value=<?php if (isset($_POST['rueNum'])) { echo "'".$_POST['rueNum']."'";
       }?>>
           <br>
-          <textarea name="cplmAdresse" form="usrform" placeholder="Complément d'adresse"><?php if (isset($_POST['cplmAdresse'])) { echo "'".$_POST['cplmAdresse']."'";
+          <textarea name="cplmAdresse" form="formInscription" placeholder="Complément d'adresse"><?php if (isset($_POST['cplmAdresse'])) { echo "'".$_POST['cplmAdresse']."'";
       }?></textarea>
           <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">--> 
 
@@ -102,7 +102,7 @@
         <td><label for="mdp" class="label">Mot de passe:</label></td>
         <td><input type="password" id="mdpinscr" name="mdpinscr" placeholder="Mot de passe"/></td>
 
-        <td class="tabEspaceInscri"><label for="confirmdp" class="label">Confirmation:</label></td><!-- /////CONFIRMATION MOT DE PASSE///// -->
+        <td class="tabEspaceInscri"><label for="confirmdp" class="label">Confirmation mot de passe:</label></td><!-- /////CONFIRMATION MOT DE PASSE///// -->
         <td><input type="password" id="confirmdp" name="confirmdp" placeholder="Confirmer mot de passe" /></td>
       </tr>
       
@@ -124,13 +124,23 @@
 
           if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
             echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
+            $nomCli = ucwords($_POST['nom']);
+            $prenomCli = ucwords ($_POST['prenom']);
+            $villeCli = ucwords ($_POST['ville']);
 
-            ucfirst($_POST['nom']);
-            var_dump($_POST['nom']);
-           /*$nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$_POST['nom']."', '".$_POST['prenom']."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");*/
+           $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");
+
+           
+
+           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."')");
 
 
-
+/*CHOSE A FAIRE 
+- complexifier les vérifications
+- imposer des conditions pour le mot de passe
+- rajouter l'adresse dans la bdd
+- virer les guillemets quand tu refresh le complement d'adresse
+*/
 
 
 
