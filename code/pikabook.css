@@ -538,6 +538,7 @@ footer{
 
 .divDerniersAjouts{
   margin-left:10%;
+  margin-top: 3%%;
   height: 40em;
   width: 80%;
   background-color:rgba(0,78,99, 0.8);
@@ -556,11 +557,12 @@ footer{
 .infoLivre{
   background-color: rgba(0,55,72, 0.8);
   width: 100%;
+  margin-bottom: 2%;
 }
-.img{
-  width: 25%;
-  margin-left: 2%;
 
+.img{
+  width: 30%;
+  margin-left: 2%;
 }
 
 .holderAjout{
