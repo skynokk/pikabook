@@ -120,49 +120,46 @@
   if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
 
-        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum']) && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance']) ) {/*VERIFICATION DES DONNEES SAISIES (dans l'ordre: Le nom, le prenom, la ville ne contiennent que des lettres / le code postal et le numéro de la rue que des chiffres / Vérifier si la date est cohérente*/
+      if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES (dans l'ordre: Le nom, le prenom, la ville ne contiennent que des lettres / le code postal et le numéro de la rue que des chiffres*/
 
+        $dateAuj= date("Y-m-d");
+        $dateUti = $_POST['dateNaissance'];
+        $diffDate= $dateAuj - $dateUti;
+
+        if ($diffDate>17 && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance'])) {/*VERIFICATION DATE (dans l'ordre l'utilisateur doit être majeur et la date ne doit pas être supérieure à celle d'aujourd'hui*/
           $longueurMdp= strlen($_POST['mdpinscr']);
 
           if ($_POST['mdpinscr'] === $_POST['confirmdp'] && preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W)#',$_POST['mdpinscr']) && $longueurMdp>6) {/* VERIFICATION DES MOTS DE PASSE (dans l'ordre: Si les deux mdp rentrés sont identiques / S'il y a la présence de chiffre, majuscule et caractère spécial / la longueur du mdp > à 6*/
             echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
-           /* $nomCli = ucwords($_POST['nom']);
+            $nomCli = ucwords($_POST['nom']);
             $prenomCli = ucwords ($_POST['prenom']);
             $villeCli = ucwords ($_POST['ville']);
 
-           $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");
+            $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");
 
-           $dernierID = $pdo -> lastInsertId();
-           var_dump($_POST['dateNaissance']);
-
-           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");*/
-
-
-/*CHOSE A FAIRE 
-- complexifier les vérifications
-- virer les guillemets quand tu refresh le complement d'adresse
-- comparer les dates pour ne pas qu'elle soit supérieure à celle d'aujourd'hui
-- faire connexion/ session et rajouter quand tu t'inscris tu refresh et tu le connectes automatiquement
-*/
-
-
-
+            $dernierID = $pdo -> lastInsertId();
+            $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
           }
           else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES ET NE RESPECTENT PAS LES CONDITIONS*/
             echo "<div class='erreur'><p>Erreur avec les mots de passe. Vérifiez qu'ils soient identiques et respectent les conditions.</p></div>";
-          }
-        }
+          }  
+        }  
 
-        else {/* SI L'UTILISATEUR N'A PAS RESPECTE LES FORMULAIRES*/
-          echo "<div class='erreur'><p>Une erreur est survenue. Veuillez vérifier les données rentrées.</p></div>";
-        }
-    }
+        else{ /* SI L'UTILISATEUR EST MINEUR*/
+          echo "<p class='erreur'> La date n'est pas conforme. Vérifiez les données saisies. Pour rappel: Vous devez être agé d'au moins 18 ans pour vous inscrire.</p>";
+        } 
+      }  
+      else {/* SI L'UTILISATEUR N'A PAS RESPECTE LES FORMULAIRES*/
+        echo "<p class='erreur'>Une erreur est survenue. Veuillez vérifier les données rentrées.</p>";
+      }            
+    } 
     else {/* SI LES FORMULAIRES NE SONT PAS TOUS REMPLIES (formulaire de copmlément d'adresse n'est pas obligatoire*/
-      echo "<div class='erreur'><p>Veuillez remplir tous les formulaires</p></div>";
-    }
+      echo "<p class='erreur'>Veuillez remplir tous les formulaires</p>";
+    }      
   }
 
-
+    
+  
 ?>
 
 <?php include '../fichier_inc/footer.inc.php'; ?>
