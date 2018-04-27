@@ -109,6 +109,7 @@
     <br>
     <p class="btnAlign"><input class="btnCouleur" type="submit" name="inscrire" value="S'inscrire"></p>
     <p class="note"> *Champs obligatoires </p>
+    <p class="note italique"> Note: Votre mot de passe doit contenir au moins 7 caractères avec une majuscule, un chiffre et un caractère spécial.</p>
 
   </form>
   <br>
@@ -119,11 +120,13 @@
   if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
 
-        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum']) && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance']) ) {/*VERIFICATION DES DONNEES SAISIES*/
+        if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum']) && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance']) ) {/*VERIFICATION DES DONNEES SAISIES (dans l'ordre: Le nom, le prenom, la ville ne contiennent que des lettres / le code postal et le numéro de la rue que des chiffres / Vérifier si la date est cohérente*/
 
-          if ($_POST['mdpinscr'] === $_POST['confirmdp'] ) {/* VERIFICATION DES MOTS DE PASSE*/
+          $longueurMdp= strlen($_POST['mdpinscr']);
+
+          if ($_POST['mdpinscr'] === $_POST['confirmdp'] && preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W)#',$_POST['mdpinscr']) && $longueurMdp>6) {/* VERIFICATION DES MOTS DE PASSE (dans l'ordre: Si les deux mdp rentrés sont identiques / S'il y a la présence de chiffre, majuscule et caractère spécial / la longueur du mdp > à 6*/
             echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
-            $nomCli = ucwords($_POST['nom']);
+           /* $nomCli = ucwords($_POST['nom']);
             $prenomCli = ucwords ($_POST['prenom']);
             $villeCli = ucwords ($_POST['ville']);
 
@@ -132,12 +135,11 @@
            $dernierID = $pdo -> lastInsertId();
            var_dump($_POST['dateNaissance']);
 
-           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
+           $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");*/
 
 
 /*CHOSE A FAIRE 
 - complexifier les vérifications
-- imposer des conditions pour le mot de passe
 - virer les guillemets quand tu refresh le complement d'adresse
 - comparer les dates pour ne pas qu'elle soit supérieure à celle d'aujourd'hui
 - faire connexion/ session et rajouter quand tu t'inscris tu refresh et tu le connectes automatiquement
@@ -146,9 +148,8 @@
 
 
           }
-          else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES*/
-            var_dump($_POST['dateNaissance']);
-            echo "<div class='erreur'><p>Les mots de passe ne sont pas similaires</p></div>";
+          else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES ET NE RESPECTENT PAS LES CONDITIONS*/
+            echo "<div class='erreur'><p>Erreur avec les mots de passe. Vérifiez qu'ils soient identiques et respectent les conditions.</p></div>";
           }
         }
 
