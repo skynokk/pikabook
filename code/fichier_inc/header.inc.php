@@ -10,7 +10,7 @@ echo "<!DOCTYPE html>
 			<script type=\"text/javascript\" src=\"../jsindex.js\"></script>
 	</head>
 
-	<body onload=\"disclaimer()\">
+	<body>
 	<header>
 
 	<input type=\"button\" class=\"co\" value=\"Inscription\" onclick=\"window.location.href='../connexion_inscription/connexioninscription';\" />
