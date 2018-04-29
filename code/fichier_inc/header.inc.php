@@ -7,9 +7,10 @@ echo "<!DOCTYPE html>
 		<meta charset=\"utf-8\">
 	    <title>Pika Book</title>
 	    <link rel=\"stylesheet\" href=\"../pikabook.css\">
+			<script type=\"text/javascript\" src=\"../jsindex.js\"></script>
 	</head>
 
-	<body>
+	<body onload=\"disclaimer()\">
 	<header>
 
 	<input type=\"button\" class=\"co\" value=\"Inscription\" onclick=\"window.location.href='../connexion_inscription/connexioninscription';\" />
@@ -20,7 +21,7 @@ echo "<!DOCTYPE html>
 		</form>
 
 	<br/><br/>
-	<a href=\"../\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"../panier/panier\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
 	<a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
 
 

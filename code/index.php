@@ -18,7 +18,7 @@
 				</form>
 			<br/><br/>
 
-			<a href="../"> <img src="../Images/petit-panier.png" class="panier" alt="panier"></a>
+			<a href="panier/panier"> <img src="../Images/petit-panier.png" class="panier" alt="panier"></a>
 			<a href="vos_commandes/voscommandes"><button type="button" class="commande" name="button">Mes commandes</button></a>
 
 
