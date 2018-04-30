@@ -11,10 +11,10 @@
       <table class="tableauFormulaire">
         <tr><!-- /////PSEUDO///// -->
           <td><label for="nom" class="label">Pseudo:</label></td>
-          <td><input type="text" id="pseudoconn" placeholder="Pseudo" /></td>
+          <td><input type="text" name="pseudoConn" placeholder="Pseudo" /></td>
 
           <td><label for="mdp">Mot de passe: </label></td><!-- /////MOT DE PASSE///// -->
-          <td><input type="password" id="mdp" name="mdpconn" placeholder="Mot de passe" /></td>
+          <td><input type="password" id="mdp" name="mdpConn" placeholder="Mot de passe" /></td>
 
           <td><input class="btnCouleur" type="submit" name="valider" value="Valider"></td>
         </tr>
@@ -23,6 +23,34 @@
     </form>
     <br>
   </div>
+
+  <?php 
+    if (isset($_POST['valider'])) {
+      if (isset($_POST['pseudoConn']) && isset($_POST['mdpConn']) && $_POST['pseudoConn']!== '' && $_POST['mdpConn']!== '') {
+       
+        $rechercheLogMdp = $pdo -> query('SELECT CliPseudo, CliMdp FROM client ');
+        while ($donnees = $rechercheLogMdp -> fetch()) {
+          if ($_POST['pseudoConn'] == $donnees['CliPseudo']) {
+            $cryptMdpConn= $_POST['mdpConn'];
+            $cryptSalt = 'Jetestlesaltdesfonctionscrypt';
+            $mdpCryptéConn= crypt($cryptMdpConn, $cryptSalt);
+            if ($mdpCryptéConn == $donnees['CliMdp']) {
+              echo "<p class='confirmation'>Test: Vous êtes connectés !</p>";
+              session_start();
+              $_SESSION['Login']= $_POST['pseudoConn'];
+              header("Location:../index.php");
+              break;
+            }
+            else {echo "<p class='erreur'>Mauvais mot de passe pour ".$_POST['pseudoConn']."</p>"; }
+          }
+        }
+      }
+      else {
+        echo "<p class='erreur'>Veuillez remplir tous les formulaires.</p>";
+      }
+    }
+
+  ?>
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
@@ -62,8 +90,6 @@
       }?>>
           <br>
           <textarea class='textareaIns' name="cplmAdresse" form="formInscription" placeholder="Complément d'adresse"></textarea>
-          <!-- <input type="block" name="complementAdresse" placeholder="Complément d'adresse">-->
-
         </td>
       </tr>
 
@@ -109,7 +135,7 @@
     <br>
     <p class="btnAlign"><input class="btnCouleur" type="submit" name="inscrire" value="S'inscrire"></p>
     <p class="note"> *Champs obligatoires </p>
-    <p class="note italique"> Note: Votre mot de passe doit contenir au moins 7 caractères avec une majuscule, un chiffre et un caractère spécial.</p>
+    <p class="note italique"> Note: Votre mot de passe doit contenir 7 caractères avec une majuscule, un chiffre et un caractère spécial.</p>
 
   </form>
   <br>
@@ -117,7 +143,7 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php
-  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/
+  if (isset($_POST['inscrire'])){ /*s'active uniquement quand tu appuies sur le bouton s'inscrire*/        
     if (isset($_POST['nom']) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["pseudoinscr"]) && isset($_POST["mdpinscr"]) && isset($_POST["confirmdp"]) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['email']!== '' && $_POST['pseudoinscr']!== '' && $_POST['mdpinscr']!== '' && $_POST['confirmdp']!== '' && $_POST['dateNaissance']!== '' && isset($_POST['ville']) && $_POST['ville']!== '' && isset($_POST['codePostal']) && $_POST['codePostal']!== '' && isset($_POST['rue']) && $_POST['rue']!== '' && isset($_POST['rueNum']) && $_POST['rueNum']!== '') /* on vérifie que tous les critères sont remplis*/{
 
       if (preg_match("#^[A-Za-z]+#", $_POST['nom']) && preg_match("#^[A-Za-z]+#", $_POST['prenom']) && preg_match("#^[A-Za-z]+#", $_POST['ville']) && preg_match("#^[0-9]+#", $_POST['codePostal']) && preg_match("#^[0-9]#", $_POST['rueNum'])) {/*VERIFICATION DES DONNEES SAISIES (dans l'ordre: Le nom, le prenom, la ville ne contiennent que des lettres / le code postal et le numéro de la rue que des chiffres*/
@@ -129,17 +155,36 @@
         if ($diffDate>17 && preg_match("#^[1|2][0|9][0-9]{2}-([0][1-9]|[1][0-2])-([0][0-9]|[1-2][0-9]|[3][0-1])#", $_POST['dateNaissance'])) {/*VERIFICATION DATE (dans l'ordre l'utilisateur doit être majeur et la date ne doit pas être supérieure à celle d'aujourd'hui*/
           $longueurMdp= strlen($_POST['mdpinscr']);
 
-          if ($_POST['mdpinscr'] === $_POST['confirmdp'] && preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W)#',$_POST['mdpinscr']) && $longueurMdp>6) {/* VERIFICATION DES MOTS DE PASSE (dans l'ordre: Si les deux mdp rentrés sont identiques / S'il y a la présence de chiffre, majuscule et caractère spécial / la longueur du mdp > à 6*/
-            echo "<div class='confirmation'><p>Ca marche vous êtes inscrits!</p></div>";
+          if ($_POST['mdpinscr'] === $_POST['confirmdp'] && preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W)#',$_POST['mdpinscr']) && $longueurMdp==7) {/* VERIFICATION DES MOTS DE PASSE (dans l'ordre: Si les deux mdp rentrés sont identiques / S'il y a la présence de chiffre, majuscule et caractère spécial / la longueur du mdp = à 7*/
+            /*VERIFICATION DE LA DISPONIBILITE D'UN PSEUDO*/
+            $rechercheLogo = $pdo -> query('SELECT CliPseudo FROM client ');
+            $verifPseudo=true;/*Par défaut le pseudo est disponible...*/
+            while ($donneesLog = $rechercheLogo -> fetch()) {
+              if ($_POST['pseudoinscr'] == $donneesLog['CliPseudo']) {
+              $verifPseudo = false;/*...mais devient faux lorsque durant le parcours de la BDD il rencontre un pseudo similaire*/
+              }
+            }
+            if ($verifPseudo== false) {/*Provoque une erreur*/ 
+            echo "<p class='erreur'>Ce pseudo est déjà pris par un autre utilisateur !</p>";
+            }
+           else {/*Inscrit l'utilisateur*/
             $nomCli = ucwords($_POST['nom']);
             $prenomCli = ucwords ($_POST['prenom']);
-            $villeCli = ucwords ($_POST['ville']);
+             $villeCli = ucwords ($_POST['ville']);
 
-            $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$_POST['mdpinscr']."', '".$_POST['dateNaissance']."')");
+             $cryptMdpIns= $_POST['mdpinscr'];
+             $cryptSalt = 'Jetestlesaltdesfonctionscrypt';
+             $mdpCrypté= crypt($cryptMdpIns, $cryptSalt);
 
-            $dernierID = $pdo -> lastInsertId();
-            $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
+             $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$mdpCrypté."', '".$_POST['dateNaissance']."')");
+
+             $dernierID = $pdo -> lastInsertId();
+             $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
+             echo "<div class='confirmation'><p>Bienvenue chez Pikabook! Connectez-vous dès maintenant avec votre login et mot de passe ! </p></div>";
+              
+            }
           }
+            
           else { /* SI LES MOTS DE PASSE NE SONT PAS IDENTIQUES ET NE RESPECTENT PAS LES CONDITIONS*/
             echo "<div class='erreur'><p>Erreur avec les mots de passe. Vérifiez qu'ils soient identiques et respectent les conditions.</p></div>";
           }  
@@ -157,9 +202,6 @@
       echo "<p class='erreur'>Veuillez remplir tous les formulaires</p>";
     }      
   }
-
-    
-  
 ?>
 
 <?php include '../fichier_inc/footer.inc.php'; ?>

@@ -298,6 +298,7 @@ color: white;
   border-color: white;
   border-width: 2px;
   border-style: groove;
+  margin-top: 2%;
 }
 
 .Param{
@@ -362,6 +363,10 @@ color: white;
 .blanc{
   background-color: red;
   width: 80%;
+}
+
+.centrer {
+  text-align: center;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -641,4 +646,23 @@ text-align:justify;
   background-color: #00a4d3;
   border-color: #00a4d3;
   color: white;
+}
+
+/*/////////////////////////////////////CoRapide//////////////////////////////////////////////////*/
+.erreurRap{   
+    width: 100%;
+    background-color: #f4433675;
+    color: white;
+    border-color: black;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    display: inline-block;
+}
+
+.btnDeco {
+    float: right;
+    margin-top: 1%;
+    background: #285858;
+    border-color: #285858;
+    color: white;
 }
