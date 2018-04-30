@@ -18,7 +18,7 @@ echo "<!DOCTYPE html>
 				<input type=\"text\" id=\"pseudo\" placeholder=\"Pseudo\" name=\"pseudoRapide\" value=\"";
 				if (isset($_POST['coRapide'])) {
 				 	echo $_POST['pseudoRapide'];
-				 } 
+				 }
 				echo "\" />
 				<input type=\"password\" id=\"mdp\" name=\"mdpRapide\" placeholder=\"Mot de Passe\"/>
 			 	<input class=\"boutonco\" type=\"submit\" name=\"coRapide\" value=\"connexion\">
@@ -27,7 +27,7 @@ echo "<!DOCTYPE html>
 
 		if (isset($_POST['coRapide'])) {
       	if (isset($_POST['pseudoRapide']) && isset($_POST['mdpRapide']) && $_POST['pseudoRapide']!== '' && $_POST['mdpRapide']!== '') {/*VERIFICATION DES FORMULAIRES*/
-       
+
         $rechercheLogMdpRapide = $pdo -> query('SELECT CliPseudo, CliMdp FROM client ');
         while ($donnees = $rechercheLogMdpRapide -> fetch()) {/*On parcours la base de donnée pour trouver le pseudo correspondant*/
           if ($_POST['pseudoRapide'] == $donnees['CliPseudo']) {
@@ -56,14 +56,14 @@ echo "<!DOCTYPE html>
 			header ('Refresh: 0');
 		}
 			echo "<br/><br/>
-	<a href=\"../\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"../panier/panier\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
 	<a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
 	<br/><br/>";
 	}
 
 
 
-		echo "<h1><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></h1>
+		echo "<h1><a href=\"../index\"><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></a></h1>
 
 		     <div id=\"searchbar\">
 		        <input class=\"champ\" type=\"text\" placeholder=\"Search...\"/>

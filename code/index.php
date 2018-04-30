@@ -55,13 +55,13 @@
 			header ('Refresh: 0');
 		}
 			echo "<br/><br/>
-	<a href=\"../\"> <img src=\"../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
-	<a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
+	<a href=\"panier/panier\"> <img src=\"../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
 	<br/><br/>";
 	}
 ?>
 
-			<h1><img class="logo" src="../Images/logo4_1.png" alt=""/></h1>
+			<h1><a href="index"><img class="logo" src="../Images/logo4_1.png" alt="logo"/></a></h1>
 
 		     <div id="searchBar">
 		        <input class="champ" type="text" placeholder="Search..."/>
