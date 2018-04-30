@@ -5,7 +5,6 @@
 		<meta charset="utf-8">
 	    <title>Pika Book</title>
 	    <link rel="stylesheet" href="pikabook.css">
-			<script type="text/javascript" src="jsindex.js"></script>
 	</head>
 
 	<body onload="disclaimer()">
@@ -18,7 +17,7 @@
 				<input type=\"text\" id=\"pseudo\" placeholder=\"Pseudo\" name=\"pseudoRapide\" value=\"";
 				if (isset($_POST['coRapide'])) {
 				 	echo $_POST['pseudoRapide'];
-				 } 
+				 }
 				echo "\" />
 				<input type=\"password\" id=\"mdp\" name=\"mdpRapide\" placeholder=\"Mot de Passe\"/>
 			 	<input class=\"boutonco\" type=\"submit\" name=\"coRapide\" value=\"connexion\">
@@ -27,7 +26,7 @@
 
 		if (isset($_POST['coRapide'])) {
       	if (isset($_POST['pseudoRapide']) && isset($_POST['mdpRapide']) && $_POST['pseudoRapide']!== '' && $_POST['mdpRapide']!== '') {/*VERIFICATION DES FORMULAIRES*/
-       
+
         $rechercheLogMdpRapide = $pdo -> query('SELECT CliPseudo, CliMdp FROM client ');
         while ($donnees = $rechercheLogMdpRapide -> fetch()) {/*On parcours la base de donnée pour trouver le pseudo correspondant*/
           if ($_POST['pseudoRapide'] == $donnees['CliPseudo']) {
@@ -91,7 +90,7 @@
 <p>Merci pour votre visite et bonne lecture !</p>
 <br/>
 </div>
-
+<script type="text/javascript" src="jsindex.js"></script>
 <div id="footerIndex">
 <?php include 'fichier_inc/footer.inc.php'; ?>
 </div>
