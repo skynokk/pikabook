@@ -176,10 +176,10 @@
              $cryptSalt = 'Jetestlesaltdesfonctionscrypt';
              $mdpCrypté= crypt($cryptMdpIns, $cryptSalt);
 
-             $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".addslashes($nomCli)."', '".addslashes($prenomCli)."', '".$_POST['sexe']."', '".$_POST['email']."', '".addslashes($_POST['pseudoinscr'])."', '".$mdpCrypté."', '".$_POST['dateNaissance']."')");
+             $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".addslashes(utf8_decode($nomCli))."', '".addslashes(utf8_decode($prenomCli))."', '".$_POST['sexe']."', '".$_POST['email']."', '".addslashes(utf8_decode($_POST['pseudoinscr']))."', '".$mdpCrypté."', '".$_POST['dateNaissance']."')");
 
              $dernierID = $pdo -> lastInsertId();
-             $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".addslashes($villeCli)."', '".$_POST['codePostal']."', '".addslashes($_POST['rue'])."', '".$_POST['rueNum']."', '".addslashes($_POST['cplmAdresse'])."' , '".$dernierID."')");
+             $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".addslashes(utf8_decode($villeCli))."', '".$_POST['codePostal']."', '".addslashes(utf8_decode($_POST['rue']))."', '".$_POST['rueNum']."', '".addslashes(utf8_decode($_POST['cplmAdresse']))."' , '".$dernierID."')");
              echo "<div class='confirmation'><p>Bienvenue chez Pikabook! Connectez-vous dès maintenant avec votre login et mot de passe ! </p></div>";
               
             }
