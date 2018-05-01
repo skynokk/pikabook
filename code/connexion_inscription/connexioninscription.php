@@ -77,13 +77,13 @@
           <label for="complementAdresse" class="label">Complément d'adresse:</label>
         </td>
         <td rowspan="4">
-          <input type="text" name="ville" placeholder="Ville" value=<?php if (isset($_POST['ville'])) { echo "'".$_POST['ville']."'";
+          <input type="text" name="ville" placeholder="Ville" value=<?php if (isset($_POST['ville'])) { echo "'".$_POST["ville"]."'";
       }?>>
           <br>
-          <input type="text" name="codePostal" placeholder="Code postal" value=<?php if (isset($_POST['codePostal'])) { echo "'".$_POST['codePostal']."'";
+          <input type="text" name="codePostal" placeholder="Code postal" value=<?php if (isset($_POST['codePostal'])) { echo "'".$_POST["codePostal"]."'";
       }?>>
           <br>
-          <input type="text" name="rue" placeholder="Nom rue" value=<?php if (isset($_POST['rue'])) { echo "'".$_POST['rue']."'";
+          <input type="text" name="rue" placeholder="Nom rue" value=<?php if (isset($_POST['rue'])) { echo "'".addslashes($_POST["rue"])."'";
       }?>>
           <br>
           <input type="text" name="rueNum" placeholder="Numéro rue" value=<?php if (isset($_POST['rueNum'])) { echo "'".$_POST['rueNum']."'";
@@ -95,13 +95,13 @@
 
       <tr><!-- /////PRENOM///// -->
         <td><label for="prenom" class="label">Prénom*:</label></td>
-        <td> <input type="text" id="prenom" name="prenom" placeholder="Prénom" value=<?php if (isset($_POST['prenom'])) { echo "'".$_POST['prenom']."'";
+        <td> <input type="text" id="prenom" name="prenom" placeholder="Prénom" value=<?php if (isset($_POST["prenom"])) { echo "'".addslashes($_POST["prenom"])."'";
       }?>></td>
       </tr>
 
       <tr> <!-- /////DATE DE NAISSANCE///// -->
         <td><label for="dateNaissance" class="label">Date de naissance* : </label></td>
-        <td><input type="date" id="dateNaissance" name="dateNaissance" value=<?php if (isset($_POST['dateNaissance'])) { echo "'".$_POST['dateNaissance']."'";
+        <td><input type="date" id="dateNaissance" name="dateNaissance" value=<?php if (isset($_POST["dateNaissance"])) { echo "'".$_POST["dateNaissance"]."'";
       }?>/></td>
       </tr>
 
@@ -114,11 +114,11 @@
 
       <tr>
         <td><label for="pseudoconn" class="label">Pseudo*:</label></td><!-- /////PSEUDO///// -->
-        <td><input type="text" id="pseudoinscr" name="pseudoinscr" placeholder="Pseudo" value=<?php if (isset($_POST['pseudoinscr'])) { echo "'".$_POST['pseudoinscr']."'";
+        <td><input type="text" id="pseudoinscr" name="pseudoinscr" placeholder="Pseudo" value=<?php if (isset($_POST["pseudoinscr"])) { echo "'".addslashes($_POST["pseudoinscr"])."'";
       }?>></td>
 
         <td class="tabEspaceInscri"><label for="email" class="label">Adresse mail*:</label></td><!-- /////ADRESSE MAIL///// -->
-        <td><input type="email" id="email" name="email" placeholder="Pikabook@gmail.com" value=<?php if (isset($_POST['email'])) { echo "'".$_POST['email']."'";
+        <td><input type="email" id="email" name="email" placeholder="Pikabook@gmail.com" value=<?php if (isset($_POST["email"])) { echo "'".$_POST["email"]."'";
       }?>></td>
       </tr>
 
@@ -135,7 +135,7 @@
     <br>
     <p class="btnAlign"><input class="btnCouleur" type="submit" name="inscrire" value="S'inscrire"></p>
     <p class="note"> *Champs obligatoires </p>
-    <p class="note italique"> Note: Votre mot de passe doit contenir 7 caractères avec une majuscule, un chiffre et un caractère spécial.</p>
+    <p class="note italique"> Note: Votre mot de passe doit contenir exactemement 7 caractères avec une majuscule, un chiffre et un caractère spécial.</p>
 
   </form>
   <br>
@@ -172,14 +172,14 @@
             $prenomCli = ucwords ($_POST['prenom']);
              $villeCli = ucwords ($_POST['ville']);
 
-             $cryptMdpIns= $_POST['mdpinscr'];
+             $cryptMdpIns= addslashes(utf8_decode($_POST['mdpinscr']));
              $cryptSalt = 'Jetestlesaltdesfonctionscrypt';
              $mdpCrypté= crypt($cryptMdpIns, $cryptSalt);
 
-             $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".$nomCli."', '".$prenomCli."', '".$_POST['sexe']."', '".$_POST['email']."', '".$_POST['pseudoinscr']."', '".$mdpCrypté."', '".$_POST['dateNaissance']."')");
+             $nouveauClient= $pdo -> exec("INSERT INTO client (CliNom, CliPrenom, CliSex, CliMail, CliPseudo, CliMdp, CliBirthDate) VALUES ('".addslashes($nomCli)."', '".addslashes($prenomCli)."', '".$_POST['sexe']."', '".$_POST['email']."', '".addslashes($_POST['pseudoinscr'])."', '".$mdpCrypté."', '".$_POST['dateNaissance']."')");
 
              $dernierID = $pdo -> lastInsertId();
-             $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".$villeCli."', '".$_POST['codePostal']."', '".$_POST['rue']."', '".$_POST['rueNum']."', '".$_POST['cplmAdresse']."' , '".$dernierID."')");
+             $nouveauClientAdr = $pdo -> exec("INSERT INTO adresse(AdrVille, AdrPostal, AdrRue, AdrRueNum, AdrComplement, CliID) VALUES ('".addslashes($villeCli)."', '".$_POST['codePostal']."', '".addslashes($_POST['rue'])."', '".$_POST['rueNum']."', '".addslashes($_POST['cplmAdresse'])."' , '".$dernierID."')");
              echo "<div class='confirmation'><p>Bienvenue chez Pikabook! Connectez-vous dès maintenant avec votre login et mot de passe ! </p></div>";
               
             }
