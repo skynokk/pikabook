@@ -15,17 +15,17 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
     </div>
 
     <div id="divAchatLivre2">
-    <img id="imgAchatLivre1" src="../../Images/placeholder.png" alt="placeholder">
+    <img id="imgAchatLivre1" src="../Images/placeholder.png" alt="placeholder">
     </div>
 <br/>
 
-<img id="imgvote" src="../../Images/vote.png" alt="vote">
+<img id="imgvote" src="../Images/vote.png" alt="vote">
 
 <div id="prixal">
   [Prix €]
 </div>
 
-<button id="buttonAchatLivre" type="button" name="button">Ajouter au panier <img id="imgAchatLivre2" src="../../Images/caddie.png" alt=""> </button>
+<button id="buttonAchatLivre" type="button" name="button">Ajouter au panier <img id="imgAchatLivre2" src="../Images/caddie.png" alt=""> </button>
 
   <div class="divAchatLivre3">
     <p>
@@ -35,7 +35,7 @@ Le Lorem Ipsum est simplement du faux texte employé dans la composition et la m
       Editeur : <br/>
       Auteur : <br/>
       Langue : <br/>
-      Moyennes  des commentaires clients : <img id="imgmoyenne" src="../../Images/vote.png" alt="vote"><br/>
+      Moyennes  des commentaires clients : <img id="imgmoyenne" src="../Images/vote.png" alt="vote"><br/>
 
     </p>
   </div>

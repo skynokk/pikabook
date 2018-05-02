@@ -1,6 +1,6 @@
 <?php include '../fichier_inc/header.inc.php'; ?>
 
-<?php 
+<?php
   if (!isset($_SESSION['Login'])) {
     echo "<div class=\"utilisateur\">
     <p class='centrer'> Connectez-vous pour pouvoir accéder à vos livres favoris ! </p>
@@ -10,7 +10,7 @@
     echo "<div class=\"utilisateur\">
          <div class=\"blanc\">
          <div class=\"livrePref\">
-           <img src=\"../../Images/avatar.jpg\" alt=\"avatar\" class=\"avatar\">
+           <img src=\"../Images/avatar.jpg\" alt=\"avatar\" class=\"avatar\">
          </div>
          <div class=\"favco\">
            <div class=\"param\">
@@ -25,7 +25,7 @@
            <div class=\"favoris\">
              <h2>Le remède mortel</h2>
              <h5>Auteur: James DASHNER</h5>
-             <img src=\"../../Images/remede.JPG\" alt=\"Dylan\" class=\"dylan\">
+             <img src=\"../Images/remede.JPG\" alt=\"Dylan\" class=\"dylan\">
              <p>Le WICKED a tout volé à Thomas : sa vie, sa mémoire et maintenant ses seuls amis. Mais
                 l'épreuve touche à sa fin. Ne reste qu'un dernier test... Terrifiant. Cependant, Thomas
                  a retrouvé assez de souvenirs pour ne plus faire confiance à l'organisation.
@@ -37,15 +37,15 @@
        <br><br><br><br><br><br>
        <div class=\"lastAchat\">
          <h2>Mes livres</h2>
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
-            <img src=\"../../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
+            <img src=\"../Images/placeholder.png\" alt=\"place\" class=\"holder\">
        </div>
      </div>";
   }

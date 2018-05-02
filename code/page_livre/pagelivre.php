@@ -32,7 +32,7 @@
 		$result = $pdo->query("SELECT LivreTitre, LivreCouv FROM livre");
 		$livre = $result->fetchAll();
 		foreach ($livre as $key) {
-			echo '<div class="divBooks"><a href="../achat_livre/achatlivre.php"><img class="imageBooks" src="../../Images/Couvertures/'.$key["LivreCouv"].'"></a><br>'.utf8_encode($key["LivreTitre"]).'</div>';
+			echo '<div class="divBooks"><a href="../achat_livre/achatlivre.php"><img class="imageBooks" src="../Images/Couvertures/'.$key["LivreCouv"].'"></a><br>'.utf8_encode($key["LivreTitre"]).'</div>';
 		}
 	 ?>
 </div>

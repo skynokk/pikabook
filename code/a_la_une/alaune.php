@@ -28,7 +28,7 @@
     <div class="actu">
       <h3>Actualités</h3>
       <p>Le Lorem Ipsum est simplement du faux eergrhtjtrkuytrjrstnuebtniut <br>
-        <img src="../../Images/placeholder.png" alt="place" class="holder">
+        <img src="../Images/placeholder.png" alt="place" class="holder">
           </p>
 
     </div>
