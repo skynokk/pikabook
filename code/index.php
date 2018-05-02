@@ -56,10 +56,6 @@
 			session_destroy();
 			header ('Refresh: 0');
 		}
-			echo "<br/><br/>
-	<a href=\"panier/panier\"> <img src=\"Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
-	<a href=\"vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
-	<br/><br/>";
 	}
 ?>
 
