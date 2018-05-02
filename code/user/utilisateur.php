@@ -7,6 +7,43 @@
     </div>";
   }
   else {
+    $IDClientResult= $pdo->query('SELECT CliID FROM client WHERE Clipseudo="'.$_SESSION['Login'].'"');
+    $IDClient = $IDClientResult -> fetch(PDO::FETCH_ASSOC);
+
+    $mot_de_passeResult = $pdo->query('SELECT CliMdp FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $mot_de_passe = $mot_de_passeResult -> fetch(PDO::FETCH_ASSOC);
+
+    $nomResult = $pdo->query('SELECT CliNom FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $nom = $nomResult -> fetch(PDO::FETCH_ASSOC);
+
+    $prenomResult = $pdo->query('SELECT CliPrenom FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $prenom = $prenomResult -> fetch(PDO::FETCH_ASSOC);
+
+    $dateNaissanceResult = $pdo->query('SELECT CliBirthDate FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $dateNaissance = $dateNaissanceResult -> fetch(PDO::FETCH_ASSOC);
+
+    $sexeResult = $pdo->query('SELECT CliSex FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $sexe = $sexeResult -> fetch(PDO::FETCH_ASSOC);
+
+    $mailResult = $pdo->query('SELECT CliMail FROM client WHERE CliID="'.$IDClient['CliID']. '"');
+    $mail = $mailResult -> fetch(PDO::FETCH_ASSOC);
+
+    $adresseVilleResult = $pdo->query('SELECT AdrVille FROM adresse WHERE CliID="'.$IDClient['CliID']. '"');
+    $adresseVille = $adresseVilleResult -> fetch(PDO::FETCH_ASSOC);
+
+    $adresseNomRueResult = $pdo->query('SELECT AdrRue FROM adresse WHERE CliID="'.$IDClient['CliID']. '"');
+    $adresseNomRue = $adresseNomRueResult -> fetch(PDO::FETCH_ASSOC);
+
+    $adresseCPResult = $pdo->query('SELECT AdrPostal FROM adresse WHERE CliID="'.$IDClient['CliID']. '"');
+    $adresseCP = $adresseCPResult -> fetch(PDO::FETCH_ASSOC);
+
+    $adresseNumRueResult = $pdo->query('SELECT AdrRueNum FROM adresse WHERE CliID="'.$IDClient['CliID']. '"');
+    $adresseNumRue = $adresseNumRueResult -> fetch(PDO::FETCH_ASSOC);
+
+    $adresseCAResult = $pdo->query('SELECT AdrComplement FROM adresse WHERE CliID="'.$IDClient['CliID']. '"');
+    $adresseCA = $adresseCAResult -> fetch(PDO::FETCH_ASSOC);
+
+    
     echo "<div class=\"utilisateur\">
          <div class=\"blanc\">
          <div class=\"livrePref\">
@@ -14,11 +51,20 @@
          </div>
          <div class=\"favco\">
            <div class=\"param\">
-             <H1 class=\"h1\">Pseudo</H1>
-             <p class\"pageUtilisateur\">Mail: </p>
-             <p class\"pageUtilisateur\">Nom: </p>
-             <p class\"pageUtilisateur\">Pseudo: </p>
-             <p class\"pageUtilisateur\">Adresse: </p>
+             <H1 class=\"h1\">Pseudo</H1> 
+             <p class\"pageUtilisateur\">Pseudo: ".$_SESSION['Login']." </p>
+             <p class\"pageUtilisateur\">Mot de passe: ".$mot_de_passe['CliMdp']." (Crypté) </p>
+             <p class\"pageUtilisateur\">Nom: ".$nom['CliNom']." </p>
+             <p class\"pageUtilisateur\">Prénom: ".$prenom['CliPrenom']." </p>
+             <p class\"pageUtilisateur\">Date de naissance: ".$dateNaissance['CliBirthDate']." </p>
+             <p class\"pageUtilisateur\">Sexe: ".$sexe['CliSex']." </p>
+             <p class\"pageUtilisateur\">Mail: ".$mail['CliMail']." </p>
+             <p class\"pageUtilisateur\">Adresse: ".$adresseNumRue['AdrRueNum']." ".$adresseNomRue['AdrRue']." ".$adresseCP['AdrPostal']." ".$adresseVille['AdrVille']." ".$adresseCA['AdrComplement']." </p>
+             
+             
+             
+             
+
              <a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"comm\" name=\"button\">Mes commandes</button></a>
              <br><br>
            </div>

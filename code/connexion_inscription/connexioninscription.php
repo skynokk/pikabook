@@ -1,5 +1,4 @@
 <?php 
-/*//////////////////////////LA CONNEXION NE MARCHE PAS EN LIGNE MAIS MARCHE PARFAITEMENT EN LOCAL//////////////*/
   include '../fichier_inc/header.inc.php';
 ?>
 <br><br>
