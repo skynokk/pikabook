@@ -5,7 +5,7 @@ include '../fichier_inc/header.inc.php';
 <div class="divPageBestSeller">
 
   <div class="ligne">
-      <div class="divBestSeller"><img class="imageBestSeller" src="../Images/livre1.jpg" > </div>
+      <div class="divBestSeller"><img class="imageBestSeller" src="../Images/harry.jpg" > </div>
       <div class="texteBestSeller"> <h2>Harry potter à l'école des sorciers</h2> </div><br><br><br>
       <div class="resumBest"><p>Le jour de ses onze ans, Harry POTTER, un orphelin élevé par un oncle et une tante qui le détenstent, voit son
       existence boulversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie! Voler, en balai,
