@@ -567,16 +567,19 @@ footer{
 }
 
 .actu{
-  width: 45%;
+  width: 47%;
   height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: left;
   margin-top: 5%;
   margin-left: 2%;
+  text-align: justify;
+  padding: 2%;
+
 }
 .actu2{
-  width: 45%;
+  width: 47%;
   height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
@@ -584,15 +587,19 @@ footer{
   margin-top: 5%;
   margin-left: 2%;
   margin-bottom: 2%;
+  padding: 2%;
+
 }
 .lorem{
-  width: 40%;
+  width: 41%;
   height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: right;
   margin-top: 5%;
   margin-right: 5%;
+  text-align: justify;
+
 }
 
 .footerune{
