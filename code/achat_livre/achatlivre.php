@@ -25,7 +25,7 @@
 
 
     echo '
-    <div>
+    <div id="divpageentiere">
       <div id="divAchatLivre1">
         <p id="pAchatLivre">
           <h3>Description du Produit :</h3>
@@ -39,13 +39,11 @@
 
       <div id="divAchatLivre2">
         <img id="imgAchatLivre1" src="../Images/Couvertures/'.$infoLivre["LivreCouv"].'" alt="Couverture du livre">
-      </div>
-      <br/>
-
-      <div id="prixal">'.$infoLivre["LivrePrix"].'€</div>
-      <a href="../livreFiles/'.$infoLivre["LivreFile"].'" download>Telecharger le fichier</a>
-
-    </div>';
+        <div id="prixal">'.$infoLivre["LivrePrix"].'€</div>
+        <a id="tele" href="../livreFiles/'.$infoLivre["LivreFile"].'" download>Telecharger le fichier</a>
+        </div>
+        <br/>
+      </div>';
   }
  ?>
 

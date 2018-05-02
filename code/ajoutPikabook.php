@@ -98,7 +98,7 @@
       <label for="livreTitre">Titre du livre : </label><br> <input id="livreTitre" type="text" name="livreTitre"><br><br>
       <label for="livreAnnee">Année de parution (aaaa): </label><br> <input id="livreAnnee" type="text" name="livreAnnee"><br><br>
       <label for="livrePrix">Prix du livre (ex : 7.55) : </label><br> <input id="livrePrix" type="text" name="livrePrix"><br><br>
-      <label for="livreDesc">Synopsis : </label><br>  <textarea id="livreDesc" name="livreDesc" rows="8" cols="80"></textarea> <br><br>
+      <label for="livreDesc">Synopsis : </label><br>  <textarea id="livreDesc" name=livreDesc rows="8" cols="80"></textarea> <br><br>
       <label for="livreCouv">Première de couverture : </label><br> <input id="livreCouv" type="file" name="livreCouv"><br><br>
       <label for="livreFile">Fichier du livre : </label><br><input id="livreFile" type="file" name="livreFile"><br><br>
       <label for="editNom">Nom de l'éditeur : </label>
