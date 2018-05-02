@@ -63,10 +63,10 @@
 
 			<h1><a href="index"><img class="logo" src="Images/logo4_1.png" alt="logo"/></a></h1>
 
-		     <div id="searchBar">
-		        <input class="champ" type="text" placeholder="Search..."/>
-		        <input class="bouton" type="button" value="&#128269; " />
-		    </div>
+			<div id="searchBar">
+				 <input class="champ" type="text" placeholder="Search..."/>
+				 <input class="bouton" type="button" value="&#128269; " />
+		 </div>
 
 		    <div class="page">
 				<div class="cadre">
