@@ -107,7 +107,9 @@ nav {
   background-color: rgba(0,55,72, 0.8);
   color: white;
   text-align: center;
-  width: 80%;
+  width: 90%;
+  height: auto;
+  overflow: auto;
   margin-left: auto;
   margin-right: auto;
   border-width: 2px;
@@ -171,6 +173,8 @@ nav {
 }
 .divPageLivre{
 	width: 90%;
+  height: auto;
+  overflow: auto;
 	margin: auto;
 	background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
@@ -209,6 +213,8 @@ nav {
   margin-right: 20.4%;
   margin-top: 14.5%;
   width : 40%;
+  height: auto;
+  overflow: auto;
   border-width: 2px;
   border-style: groove;
 }
@@ -263,6 +269,7 @@ nav {
   opacity: 0.9;
   width: 66.7%;
   height: auto;
+  overflow: auto;
   float : left;
   margin-left: 13%;
   margin-top: 1%;
@@ -275,6 +282,7 @@ nav {
   opacity: 0.9;
   width: 66.7%;
   height: auto;
+  overflow: auto;
   float: left;
   margin-left: 13%;
   margin-top: 1%;
@@ -295,9 +303,10 @@ color: white;
 
 .utilisateur{
   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
-  width: 80%;
-  /*height: 100%; */
-  margin-left: 10%;
+  width: 90%;
+  height: auto;
+  overflow: auto;
+  margin : auto;
   background-color: rgba(0,78,99, 0.8);
   color: white;
   border-color: white;
@@ -335,7 +344,8 @@ color: white;
 .favoris{
   float: right;
   width: 35%;
-  height: 10%;
+  height: auto;
+  overflow: auto;
   /*background-color: rgba(0,55,72, 0.8);*/
   background-color: red
 
@@ -379,9 +389,8 @@ color: white;
 
 .DivCon_Insc{
   /*background-color: rgba(254,254,254, 0.8); /* Pour faire un fond blanc avec opacity */
-  width: 80%;
-  /*height: 100%; */
-  margin-left: 10%;
+  width: 90%;
+  margin: auto;
   background-color: rgba(0,55,72, 0.8);
   color: white;
   border-color: white;
@@ -465,9 +474,10 @@ color: white;
 
 .divPageBestSeller{
 	width: 90%;
+  height: auto;
+  overflow: auto;
 	margin-left: 5%;
   margin-top: 3%;
-	height: 70em;
 	background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
   border-style: groove;
@@ -520,9 +530,11 @@ footer{
 /*////////////////////////////////////A LA UNE////////////////////////////////////////////////*/
 
 .box{
-  width: 80%;
-  height: 53em;
-  margin-left: 10%;
+  width: 90%;
+  height: auto;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(0,78,99, 0.8);
   color: white;
   border-color: white;
@@ -561,15 +573,14 @@ footer{
 /*///////////////////////////////////////derniers ajouts/////////////////////////////////////*/
 
 .divDerniersAjouts{
-  margin-left:10%;
-  margin-top: 3%;
+  margin: auto;
   height: auto;
-  width: 80%;
+  overflow: auto;
+  width: 90%;
   background-color:rgba(0,78,99, 0.8);
   border-color: white;
   border-width: 2px;
   border-style: groove;
-
 }
 
 .divNouv{
@@ -610,9 +621,9 @@ text-align:justify;
 
 .pageCommandes{
   width: 90%;
-  margin-left: 5%;
-  margin-top: 3%;
-  height: 50em;
+  margin: auto;
+  overflow: auto;
+  height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
   border-style: groove;
@@ -634,9 +645,9 @@ text-align:justify;
 
 .pagePanier{
   width: 90%;
-  margin-left: 5%;
-  margin-top: 3%;
-  height: 50em;
+  margin: auto;
+  height: auto;
+  overflow: auto;
   background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
   border-style: groove;

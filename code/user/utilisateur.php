@@ -19,7 +19,7 @@
              <p class\"pageUtilisateur\">Nom: </p>
              <p class\"pageUtilisateur\">Pseudo: </p>
              <p class\"pageUtilisateur\">Adresse: </p>
-             <input type=\"submit\" name=\"commande\" value=\"Mes commandes\" class=\"comm\">
+             <a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"comm\" name=\"button\">Mes commandes</button></a>
              <br><br>
            </div>
            <div class=\"favoris\">
