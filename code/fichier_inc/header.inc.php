@@ -53,15 +53,11 @@ echo "<!DOCTYPE html>
 	echo '<div class="clear"></div>';
 		echo "<form action='".$_SERVER['PHP_SELF']."' method=\"POST\">
 		<input type=\"submit\" name=\"Deconnexion\" value=\"Déconnexion\" class='btnDeco'>";
-		
+
 		if (isset($_POST['Deconnexion'])) {
 			session_destroy();
 			header ('Refresh: 0');
 		}
-			echo "<br/><br/>
-	<a href=\"../panier/panier\"> <img src=\"../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
-	<a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
-	<br/><br/>";
 	}
 
 
@@ -87,7 +83,7 @@ echo "<!DOCTYPE html>
    							$statutAdmin = $statutAdminResult -> fetch(PDO::FETCH_ASSOC);
 							if ($statutAdmin['CliStatut'] == '1') {
 								echo "<li class='admin'><a class=\"navigator admin\" href=\"../ajoutPikabook.php\">Ajout de livre</a></li>";
-							}	
+							}
 						}
 		echo "</nav>
 		</div>

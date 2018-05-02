@@ -31,9 +31,6 @@ INSERT INTO `auteur` (`AuteurID`, `AuteurBio`, `AuteurNom`) VALUES
 (3, 'Henry-René-Albert-Guy de Maupassant est un écrivain et journaliste littéraire français né le 5 août 1850 au château de Miromesnil à Tourville-sur-Arques (Seine-Inférieure) et mort le 6 juillet 1893 à Paris.', 'Guy de Maupassant'),
 (4, 'Albert Camus, né le 7 novembre 1913 à Mondovi (aujourd’hui Dréan), près de Bône (aujourd’hui Annaba), en Algérie, et mort accidentellement le 4 janvier 1960 à Villeblevin, dans l''Yonne en France1, est un écrivain, philosophe, romancier, dramaturge, journaliste, essayiste et nouvelliste français. Il est aussi journaliste militant engagé dans la Résistance française et, proche des courants libertaires dans les combats moraux de l''après-guerre.', 'Albert Camus'),
 (5, 'Émile Zola est un écrivain et journaliste français, né le 2 avril 1840 à Paris, où il est mort le 29 septembre 1902. Considéré comme le chef de file du naturalisme, c''est l''un des romanciers français les plus populaires, les plus publiés, traduits et commentés au monde. Ses romans ont connu de très nombreuses adaptations au cinéma et à la télévision.', 'Emile Zola'),
-(10, 'écrivain et auteur du manga Naruto', 'Masashi Kisimoto'),
-(11, 'Eleve de b1 ingé', 'Lorenzo'),
-(12, 'Phiphi le sang', 'Olivier'),
 (13, 'Joanne Rowling, connue sous les pseudonymes de J. K. Rowling et Robert Galbraith, est une romancière et scénariste britannique née le 31 juillet 1965 dans l?agglomération de Yate, dans le Gloucestershire, en Angleterre. Elle doit sa notoriété mondiale à la série Harry Potter, dont les romans traduits en près de quatre-vingts langues ont été vendus à plus de 500 millions d''exemplaires dans le monde.', 'J.K. Rowling'),
 (14, 'Anna Todd se marie à dix-huit ans avec un militaire. « J''aspirais à autre chose pour ma propre vie » que de devenir femme au foyer. Elle se met alors à écrire pour surmonter l''ennui des bases militaires.\r\n\r\nÀ l''origine, elle imagine une fanfiction avec comme personnage principal le chanteur du groupe One Direction. « Je me considère [?] comme une conteuse d''histoires hyperconnectée », dit-elle.\r\n\r\nTapée sur un smartphone ? qu''elle ne lâche jamais ? et publiée sur Wattpad, son histoire connaît un grand succès et, repérée par Simon & Schuster, aura droit à une édition papier en cinq livres. En France, la publication est réalisée par la maison d''édition Hugo & Cie et au Québec par Les Éditions de l''Homme. Les droits de l??uvre, pour une adaptation cinématographique, ont été achetés par Paramount Pictures.', 'Anna Todd'),
 (15, 'Né en 1973 à Annecy, Franck Thilliez, ingénieur en nouvelles technologies1,2, vit à Mazingarbe3, petite commune proche de Béthune dans le Pas-de-Calais.\r\n\r\nRomancier, il est également scénariste et a coécrit, avec Nicolas Tackian, les dialogues du film de Pierre Isoard intitulé Alex Hugo, la mort et la belle vie : film inspiré d''un roman américain, relocalisé en Provence pour l''adaptation à la télévision.\r\n\r\n', 'Franck Thilliez');
@@ -68,8 +65,6 @@ INSERT INTO `editeur` (`EditID`, `EditNom`) VALUES
 (1, 'Folio classique'),
 (2, 'Gallimard'),
 (3, 'Glénat'),
-(4, 'LorenzoCompany'),
-(5, 'oussama edition'),
 (6, 'Lgf');
 
 CREATE TABLE IF NOT EXISTS `genre` (
@@ -83,7 +78,6 @@ INSERT INTO `genre` (`GenreID`, `GenreNom`, `GenreDesc`) VALUES
 (2, 'Tragédie', 'La tragédie est un genre théâtral dont l’origine remonte au théâtre grec antique. Contrairement à la comédie, elle met en scène des personnages de rangs élevés et se dénoue très souvent par la mort d’un ou de plusieurs personnages.'),
 (3, 'Comédie', 'La comédie est un genre littéraire, théâtral, cinématographique et télévisuel fonctionnant sur le registre de l''humour. Née dans l''Antiquité grecque, elle est devenue un genre littéraire qui s''est épanoui de manière diversifiée en fonction des époques. Avant Molière, elle était dévalorisée comparée à la tragédie.'),
 (7, 'Fantasy', 'La fantasy, ou fantasie est un genre littéraire présentant un ou plusieurs éléments surnaturels qui relèvent souvent du mythe et qui sont souvent incarnés par l?irruption ou l?utilisation de la magie.'),
-(8, 'LorenzoStyle', 'Du très très sale mamène');
 
 CREATE TABLE IF NOT EXISTS `livre` (
 `LivreID` int(11) NOT NULL,
@@ -148,8 +142,6 @@ MODIFY `CliID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=68;
 
 ALTER TABLE `editeur`
 MODIFY `EditID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
-
-ALTER TABLE `genre`
 
 ALTER TABLE `livre`
 MODIFY `LivreID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
