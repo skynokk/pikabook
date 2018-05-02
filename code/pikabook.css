@@ -149,6 +149,19 @@ nav {
   border-radius: 5px;
 }
 
+.admin {
+  background-color: #3cb179;
+  border-color:#3cb179;
+  transition: border-radius 0.9s;
+  transition: background-color 0.9s;
+  transition: border 0.9s;
+}
+.admin :hover {
+  background-color: #3cb179;
+  border: #3cb179 solid 0.5em;
+  border-radius:0.4em;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*//////////////////////////////////PAGE LIVRE//////////////////////////////////////////////*/
