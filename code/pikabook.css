@@ -491,9 +491,18 @@ color: white;
   float: left;
 }
 
+.divBestSellers{
+  height: 25%;
+  width: 15%;
+  float: right;
+  margin-right: 10%;
+  margin-top: -7.5%;
+}
+
 .imageBestSeller{
   height: 100%;
   width: 100%;
+  margin-left: 5%;
 }
 .ligne{
   margin-top: 3%;
@@ -503,9 +512,18 @@ color: white;
 }
 
 .resumBest{
-  
-  text-align: center;
+  float: right;
+  margin-right: 10%;
+  width: 70%;
+  text-align: justify;
 }
+
+.resumBestGauche{
+  float: left;
+  width: 70%;
+  text-align: justify;
+}
+
 .texteBestSeller{
   text-align: center;
   background-color: rgba(255, 255, 255, 0.7);
