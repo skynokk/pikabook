@@ -162,8 +162,6 @@
           $genreNom = addslashes(utf8_decode($_POST["genreNom"]));
           $genreDesc = addslashes(utf8_decode($_POST["genreDesc"]));
           $result = $pdo->exec("INSERT INTO genre (GenreNom, GenreDesc) VALUES ('$genreNom', '$genreDesc')");
-          var_dump($genreNom);
-          var_dump($genreDesc);
           echo "Genre ajouté !!";
         }
         else {
