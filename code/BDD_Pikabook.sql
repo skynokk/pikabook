@@ -77,10 +77,10 @@ INSERT INTO `genre` (`GenreID`, `GenreNom`, `GenreDesc`) VALUES
 (1, 'Roman', 'Le roman est un genre littéraire, caractérisé essentiellement par une narration fictionnelle. La place importante faite à l''imagination transparaît dans certaines expressions comme « C''est du roman ! » ou dans certaines acceptions de l’adjectif « romanesque » qui renvoient à l''extraordinaire des personnages, des situations ou de l''intrigue.'),
 (2, 'Tragédie', 'La tragédie est un genre théâtral dont l’origine remonte au théâtre grec antique. Contrairement à la comédie, elle met en scène des personnages de rangs élevés et se dénoue très souvent par la mort d’un ou de plusieurs personnages.'),
 (3, 'Comédie', 'La comédie est un genre littéraire, théâtral, cinématographique et télévisuel fonctionnant sur le registre de l''humour. Née dans l''Antiquité grecque, elle est devenue un genre littéraire qui s''est épanoui de manière diversifiée en fonction des époques. Avant Molière, elle était dévalorisée comparée à la tragédie.'),
-(7, 'Fantasy', 'La fantasy, ou fantasie est un genre littéraire présentant un ou plusieurs éléments surnaturels qui relèvent souvent du mythe et qui sont souvent incarnés par l?irruption ou l?utilisation de la magie.'),
+(7, 'Fantasy', 'La fantasy, ou fantasie est un genre littéraire présentant un ou plusieurs éléments surnaturels qui relèvent souvent du mythe et qui sont souvent incarnés par l?irruption ou l?utilisation de la magie.');
 
 CREATE TABLE IF NOT EXISTS `livre` (
-`LivreID` int(11) NOT NULL,
+  `LivreID` int(11) NOT NULL,
   `LivreISBN` varchar(50) NOT NULL,
   `LivreTitre` varchar(200) NOT NULL,
   `LivreAnnee` int(11) DEFAULT NULL,
@@ -143,12 +143,9 @@ MODIFY `CliID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=68;
 ALTER TABLE `editeur`
 MODIFY `EditID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 
-<<<<<<< HEAD
 ALTER TABLE `genre`
 MODIFY `GenreID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
-=======
->>>>>>> 7c4a3a989a96a9a79b40612a3137745b32356064
 ALTER TABLE `livre`
 MODIFY `LivreID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 
