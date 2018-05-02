@@ -79,6 +79,13 @@
 						<li><a class="navigator" href="best_seller/bestseller">Les Best-Sellers</a></li>
 						<li><a class="navigator" href="derniers_ajouts/derniersajouts">Les derniers ajouts</a></li>
 						<li><a class="navigator" href="user/utilisateur">Mon compte</a></li>
+						<?php if (isset($_SESSION['Login'])) {
+							$statutAdminResult= $pdo->query('SELECT CliStatut FROM client WHERE Clipseudo="'.$_SESSION['Login'].'"');
+   							$statutAdmin = $statutAdminResult -> fetch(PDO::FETCH_ASSOC);
+							if ($statutAdmin['CliStatut'] == '1') {
+								echo "<li class='admin'><a class=\"navigator admin\" href=\"../ajoutPikabook.php\">Ajout de livre</a></li>";
+							}	
+						} ?>
 					</nav>
 		</div>
 	</header>

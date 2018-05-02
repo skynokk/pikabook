@@ -87,8 +87,7 @@ echo "<!DOCTYPE html>
    							$statutAdmin = $statutAdminResult -> fetch(PDO::FETCH_ASSOC);
 							if ($statutAdmin['CliStatut'] == '1') {
 								echo "<li class='admin'><a class=\"navigator admin\" href=\"../ajoutPikabook.php\">Ajout de livre</a></li>";
-							}
-							
+							}	
 						}
 		echo "</nav>
 		</div>
