@@ -12,11 +12,13 @@
     $resultGenre = $pdo->query("SELECT GenreNom FROM genre WHERE GenreID='$genre'");
     $genreNom = $resultGenre->fetch(PDO::FETCH_ASSOC);
     //
+
     // Affichage de l'auteur
     $auteur= $infoLivre["AuteurID"];
     $resultAuteur = $pdo->query("SELECT AuteurNom FROM auteur WHERE AuteurID='$auteur'");
     $auteurNom = $resultAuteur->fetch(PDO::FETCH_ASSOC);
     //
+
     // Affichage de l'editeur
     $editeur= $infoLivre["EditID"];
     $resultEdit = $pdo->query("SELECT EditNom FROM editeur WHERE EditID='$editeur'");
@@ -29,9 +31,9 @@
       <div id="divAchatLivre1">
         <p id="pAchatLivre">
           <h3>Description du Produit :</h3>
-          Auteur : '.$auteurNom["AuteurNom"].' <br/>
-          Editeur : '.$editeurNom["EditNom"].' <br/>
-          Genre : '.$genreNom["GenreNom"].' <br/>
+          Auteur : '.utf8_encode($auteurNom["AuteurNom"]).' <br/>
+          Editeur : '.utf8_encode($editeurNom["EditNom"]).' <br/>
+          Genre : '.utf8_encode($genreNom["GenreNom"]).' <br/>
           <h3>Synopsis : </h3><br/>
           '.utf8_encode($infoLivre["LivreDesc"]).'<br>
         </p>
