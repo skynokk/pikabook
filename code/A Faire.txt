@@ -1,9 +1,0 @@
-﻿
-Page Mes Commandes
-Page Mon Panier
-Page
-Li� la BDD
-Compl�ter les information dans la page Utilisateur
-Regarder si le site est responsive
-
-
