@@ -56,10 +56,6 @@
 			session_destroy();
 			header ('Refresh: 0');
 		}
-			echo "<br/><br/>
-	<a href=\"panier/panier\"> <img src=\"Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
-	<a href=\"vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
-	<br/><br/>";
 	}
 ?>
 
@@ -73,7 +69,7 @@
 		    <div class="page">
 				<div class="cadre">
 					<nav>
-						<li><a class="navigator" href="#">Présentation</a></li>
+						<li><a class="navigator" href="index">Présentation</a></li>
 						<li><a class="navigator" href="a_la_une/alaune">A la Une</a></li>
 						<li><a class="navigator" href="page_livre/pagelivre">Livres</a></li>
 						<li><a class="navigator" href="best_seller/bestseller">Les Best-Sellers</a></li>
@@ -83,7 +79,7 @@
 							$statutAdminResult= $pdo->query('SELECT CliStatut FROM client WHERE Clipseudo="'.$_SESSION['Login'].'"');
    							$statutAdmin = $statutAdminResult -> fetch(PDO::FETCH_ASSOC);
 							if ($statutAdmin['CliStatut'] == '1') {
-								echo "<li class='admin'><a class=\"navigator admin\" href=\"ajoutPikabook.php\">Ajout de livre</a></li>";
+								echo "<li class='admin'><a class=\"navigator admin\" href=\"ajoutPikabook\">Ajout de livre</a></li>";
 							}
 						} ?>
 					</nav>

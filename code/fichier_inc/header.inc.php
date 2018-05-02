@@ -82,7 +82,7 @@ echo "<!DOCTYPE html>
 							$statutAdminResult= $pdo->query('SELECT CliStatut FROM client WHERE Clipseudo="'.$_SESSION['Login'].'"');
    							$statutAdmin = $statutAdminResult -> fetch(PDO::FETCH_ASSOC);
 							if ($statutAdmin['CliStatut'] == '1') {
-								echo "<li class='admin'><a class=\"navigator admin\" href=\"../ajoutPikabook.php\">Ajout de livre</a></li>";
+								echo "<li class='admin'><a class=\"navigator admin\" href=\"../ajoutPikabook\">Ajout de livre</a></li>";
 							}
 						}
 		echo "</nav>
