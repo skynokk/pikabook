@@ -569,16 +569,26 @@ footer{
 
 .actu{
   width: 45%;
-  height: 11em;
+  height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: left;
   margin-top: 5%;
   margin-left: 2%;
 }
+.actu2{
+  width: 45%;
+  height: auto;
+  background-color: rgba(0,55,72, 0.8);
+  border-color: white;
+  float: left;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
 .lorem{
   width: 40%;
-  height: 11em;
+  height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: right;
@@ -591,6 +601,10 @@ footer{
   margin-left: 10%;
   margin-bottom: 1%;
   color: white;
+}
+.holder{
+  height: 15em;
+  width: 30em;
 }
 
 
