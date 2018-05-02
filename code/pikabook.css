@@ -595,6 +595,7 @@ footer{
 
 .divDerniersAjouts{
   margin: auto;
+  margin-top: 2%;
   height: auto;
   overflow: auto;
   width: 90%;

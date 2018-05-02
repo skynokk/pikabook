@@ -1,5 +1,0 @@
-RewriteEngine On
- 
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://www.pikabook.ga%{REQUEST_URI} [L,R=301]
