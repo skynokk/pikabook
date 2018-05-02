@@ -10,7 +10,7 @@
 /*/////////////////////////////////Body//////////////////////////////////////////////////*/
 
 body{
-	background-image: url(../Images/fonds.jpg);
+	background-image: url(Images/fonds.jpg);
   font-family: 'ABeeZee', sans-serif;
   color: white;
 }
@@ -671,8 +671,6 @@ text-align:justify;
     border-color: #285858;
     color: white;
 }
-<<<<<<< HEAD
-=======
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////Cookies//////////////////////////////////////////////////*/
@@ -687,4 +685,3 @@ text-align:justify;
   padding: 1%;
   margin-top: 2%;
 }
->>>>>>> c6dd8b56f4405406ffdccbb525aca9b936f82ff6

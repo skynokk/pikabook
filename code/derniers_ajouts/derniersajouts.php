@@ -15,7 +15,7 @@
       </div>
       <div class="img">
         <br><br>
-        <img src="../../Images/placeholder.png" alt="placeholder" class="holderAjout">
+        <img src="../Images/placeholder.png" alt="placeholder" class="holderAjout">
     </div>
 
     </div>

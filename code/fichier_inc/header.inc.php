@@ -56,14 +56,14 @@ echo "<!DOCTYPE html>
 			header ('Refresh: 0');
 		}
 			echo "<br/><br/>
-	<a href=\"../panier/panier\"> <img src=\"../../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
+	<a href=\"../panier/panier\"> <img src=\"../Images/petit-panier.png\" class=\"panier\" alt=\"panier\"></a>
 	<a href=\"../vos_commandes/voscommandes\"><button type=\"button\" class=\"commande\" name=\"button\">Mes commandes</button></a>
 	<br/><br/>";
 	}
 
 
 
-		echo "<h1><a href=\"../index\"><img class=\"logo\" src=\"../../Images/logo4_1.png\" alt=\"\"/></a></h1>
+		echo "<h1><a href=\"../index\"><img class=\"logo\" src=\"../Images/logo4_1.png\" alt=\"\"/></a></h1>
 
 		     <div id=\"searchbar\">
 		        <input class=\"champ\" type=\"text\" placeholder=\"Search...\"/>
