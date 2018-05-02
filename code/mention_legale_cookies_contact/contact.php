@@ -42,13 +42,15 @@
 		if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['objet']) && isset($_POST['contenuMessage']) && $_POST['nom']!== '' && $_POST['prenom']!== '' && $_POST['objet']!== '' && $_POST['contenuMessage']!== '' ) {
 			$message = wordwrap($_POST['contenuMessage'], 70, "\r\n");
 			$mailContact= 'laura.graca@ynov.com';
-			$objetContact= $_POST['objet'];
-			mail($mailContact, $objetContact, $message);
+			$objetContact= $_POST['nom'].' '. $_POST['prenom'].' : '. $_POST['objet'];
+			mail("laura.graca@ynov.com", $objetContact, $message);
 			echo "<p class='confirmation'>Le mail a été envoyé !</p>";
 		}
 		else {echo "<p class='erreur'>Veuillez remplir tous les formulaires</p>";
 		}
 	}
+/*/////////////////LA FONCTION MAIL NE MARCHE PAS EN LOCAL MAIS MARCHE EN LIGNE//////////////*/
 ?>
+
 
 <?php include '../fichier_inc/footer.inc.php'; ?>

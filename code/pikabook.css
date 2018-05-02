@@ -636,7 +636,7 @@ text-align:justify;
   border-style: groove;
 }
 .panier{
-  width: 5%;
+  width: 4%;
   float: right;
 }
 .commande{
@@ -684,11 +684,20 @@ text-align:justify;
 
 .btnDeco {
     float: right;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
     background: #285858;
     border-color: #285858;
     color: white;
 }
+
+.floatRight{
+  float:right;
+}
+
+.clear{
+  clear: both;
+}
+
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////Cookies/Mentions légales //////////////////////////////////////////////////*/

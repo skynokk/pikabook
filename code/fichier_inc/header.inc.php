@@ -49,8 +49,11 @@ echo "<!DOCTYPE html>
     }
 }
 	else {//si la session est active alors les commandes de l'utilisateur sont accessibles
+	echo "<p class='floatRight'>Bonjour à toi ". $_SESSION['Login'] . " !</p>";
+	echo '<div class="clear"></div>';
 		echo "<form action='".$_SERVER['PHP_SELF']."' method=\"POST\">
 		<input type=\"submit\" name=\"Deconnexion\" value=\"Déconnexion\" class='btnDeco'>";
+		
 		if (isset($_POST['Deconnexion'])) {
 			session_destroy();
 			header ('Refresh: 0');
