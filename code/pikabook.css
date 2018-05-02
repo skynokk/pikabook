@@ -208,87 +208,56 @@ nav {
 
 /*//////////////////////////////////////ACHAT LIVRE//////////////////////////////////////////////*/
 
+#divpageentiere{
+   background-color : rgba(0,55,72, 0.8);
+   width: 90%;
+   height: auto;
+   margin-top: 2%;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: auto;
+   border-width: 2px;
+   border-style: groove;
+  }
+
 #divAchatLivre1{
   background-color : rgba(0,55,72, 0.8);
   float : right;
   margin-right: 20.4%;
-  margin-top: 14.5%;
+  margin-top: 3%;
   width : 40%;
   height: auto;
   overflow: auto;
   border-width: 2px;
   border-style: groove;
+  padding: 20px 10px 20px 10px;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
 #imgAchatLivre1{
   float : left;
   width : 20%;
-  margin-top: 12.5%;
+  margin-top: 2.5%;
   margin-left: 13%;
   border-width: 2px;
   border-style: groove;
-}
-
-#imgvote{
-  width: 10%;
-  height: 10%;
-  float: left;
-  margin-top: 0.6%;
-  margin-left: 18%;
-}
-
-#imgmoyenne{
-  width: 6%;
-  height: 6%;
-}
-
-#imgAchatLivre2{
-  width:50%;
-  height:20%;
 }
 
 #prixal{
-  background-color: rgba(0,55,72, 0.8);
   text-align: center;
-  width: 4%;
+  width: auto;
   float: left;
-  margin-top: 2%;
-  margin-left: 11.6%;
-  border-width: 2px;
-  border-style: groove;
-}
-
-#buttonAchatLivre{
-  float : right;
+  margin-left: 20%;
   margin-top: 1%;
-  margin-right: 20.4%;
-  width: 8%;
 }
 
-.divAchatLivre3{
-  background-color: rgba(0,55,72, 0.8);
-  opacity: 0.9;
-  width: 66.7%;
-  height: auto;
-  overflow: auto;
-  float : left;
-  margin-left: 13%;
+#tele{
   margin-top: 1%;
-  border-width: 2px;
-  border-style: groove;
-}
-
-.divAchatLivre4{
-  background-color: rgba(0,55,72, 0.8);
-  opacity: 0.9;
-  width: 66.7%;
-  height: auto;
-  overflow: auto;
+  color: white;
   float: left;
-  margin-left: 13%;
-  margin-top: 1%;
-  border-width: 2px;
-  border-style: groove;
+  margin-left: 16%;
+  text-align: center;
 }
 
 #footeral{
@@ -567,19 +536,16 @@ footer{
 }
 
 .actu{
-  width: 47%;
+  width: 45%;
   height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
   float: left;
   margin-top: 5%;
   margin-left: 2%;
-  text-align: justify;
-  padding: 2%;
-
 }
 .actu2{
-  width: 47%;
+  width: 45%;
   height: auto;
   background-color: rgba(0,55,72, 0.8);
   border-color: white;
@@ -587,8 +553,6 @@ footer{
   margin-top: 5%;
   margin-left: 2%;
   margin-bottom: 2%;
-  padding: 2%;
-
 }
 .lorem{
   width: 40%;
@@ -598,8 +562,6 @@ footer{
   float: right;
   margin-top: 5%;
   margin-right: 5%;
-  text-align: justify;
-
 }
 
 .footerune{
@@ -622,7 +584,7 @@ footer{
   height: auto;
   overflow: auto;
   width: 90%;
-  background-color:rgba(0,55,72, 0.8);
+  background-color: rgba(0,55,72, 0.8);
   border-color: white;
   border-width: 2px;
   border-style: groove;
