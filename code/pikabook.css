@@ -150,7 +150,7 @@ nav {
 	text-align: center;
 	background-color: grey;
   opacity: 0.8;
-	height: 30%;
+	height: auto;
 	width: 15%;
 	margin-left: 7%;
 	margin-top: 5%;
@@ -167,7 +167,7 @@ nav {
 .divPageLivre{
 	width: 90%;
 	margin-left: 5%;
-	height: 60em;
+	height: auto;
 	background-color: rgba(0,55,72, 0.8);
   border-width: 2px;
   border-style: groove;
@@ -452,7 +452,7 @@ color: white;
 }
 
 .italique {
-  font-style: italic; 
+  font-style: italic;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -649,7 +649,7 @@ text-align:justify;
 }
 
 /*/////////////////////////////////////CoRapide//////////////////////////////////////////////////*/
-.erreurRap{   
+.erreurRap{
     width: 100%;
     background-color: #f4433675;
     color: white;
