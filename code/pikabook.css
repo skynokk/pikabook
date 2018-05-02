@@ -63,6 +63,8 @@ h1{
 
 .cadre {
     color: white;
+    width: 100%;
+    margin: auto;
     padding-top: 1%;
     background-color: rgba(0,0,0,0.5);
     height: 2em;
